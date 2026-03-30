@@ -1,0 +1,10 @@
+; TEST.brot — Minimal BROT V0 smoke test (no labels)
+
+
+ADDI r1, r0, 0x10:uint       ; r1 = scratch base
+    ADDI r2, r0, 0x100:uint     ; r2 = data base
+ADDI   r3, r0, 0x108:uint    ; r3 = data end
+ADDI r8, r0, 53.532:Q28.7 ;FIXED POINT TEST YAY
+ADDI r4, r0, 42:uint         ; r4 = U.Int(42)
+ADD r4, r3, r2
+CONVERT r2, r1, Q28.7

@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/mwd/Developer/BROT/assembler/build",
+  "command": "/usr/bin/clang++ -g -std=gnu++23 -arch arm64 -Werror -Wall -Wextra -Wpedantic -Wsign-conversion -Wfloat-conversion -Wnarrowing -Wshadow -Wold-style-cast -Wcast-qual -Wconversion -fstandalone-debug -glldb -o CMakeFiles/basm.dir/src/main.cpp.o -c /Users/mwd/Developer/BROT/assembler/src/main.cpp",
+  "file": "/Users/mwd/Developer/BROT/assembler/src/main.cpp",
+  "output": "/Users/mwd/Developer/BROT/assembler/build/CMakeFiles/basm.dir/src/main.cpp.o"
+}
+]

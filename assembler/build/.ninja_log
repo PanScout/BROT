@@ -1,0 +1,5 @@
+# ninja log v7
+3	1063	1774737575075533053	CMakeFiles/basm.dir/src/main.cpp.o	6e8ef004693ae495
+1063	1108	1774737576135512119	/Users/mwd/Developer/BROT/assembler/bin/basm	5d3a1880e342a7bd
+6	1151	1774738547161308272	CMakeFiles/basm.dir/src/main.cpp.o	6e8ef004693ae495
+1151	1201	1774738548306414512	/Users/mwd/Developer/BROT/assembler/bin/basm	5d3a1880e342a7bd

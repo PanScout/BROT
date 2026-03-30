@@ -1,0 +1,129 @@
+; ============================================================
+; SMOKE_TEST.brot — R/I/C type exhaustive smoke test
+; Tests every instruction, multiple formats, weird spacing
+; ============================================================
+
+; --- BLANK LINES AND COMMENT-ONLY LINES ---
+;
+; this is a comment-only line
+   ; indented comment
+
+; --- R-TYPE: Every instruction ---
+ADD r3, r1, r2          ; basic add
+SUB r4, r2, r1          ; basic sub
+XOR r5, r3, r4          ; xor
+OR r6, r1, r5           ; or
+AND r7, r6, r3          ; and
+SLL r8, r1, r2          ; shift left logical
+SHR r9, r3, r2          ; shift right logical
+MUL r11, r1, r2         ; multiply
+MULH r12, r3, r4        ; multiply high
+MAC r13, r1, r2         ; multiply accumulate
+
+; --- R-TYPE: Edge cases ---
+ADD r0, r0, r0          ; zero + zero
+ADD r22, r21, r20       ; high register numbers
+SUB r1, r1, r1          ; self subtract
+
+; --- R-TYPE: Weird formatting ---
+    ADD r3, r1, r2      ; leading whitespace
+		ADD r3, r1, r2  ; leading tabs
+ADD    r3,   r1,   r2   ; extra internal spaces
+  ADD   r3,r1,r2        ; no spaces after commas
+ADD r3, r1, r2;comment with no space before semicolon
+
+; --- I-TYPE: Every instruction, decimal uint ---
+ADDI r1, r0, 0:uint
+ADDI r1, r0, 1:uint
+XORI r2, r1, 255:uint
+ORI r3, r1, 128:uint
+ANDI r4, r1, 15:uint
+SLLI r5, r1, 3:uint
+SHRI r6, r1, 2:uint
+
+; --- I-TYPE: Hex immediates ---
+ADDI r1, r0, 0x0:uint
+ADDI r2, r0, 0xFF:uint
+ADDI r3, r0, 0x1FFFF:uint  ; max 18-bit unsigned
+ADDI r4, r0, 0xABCD:uint
+
+; --- I-TYPE: Binary immediates ---
+ADDI r1, r0, 0b0:uint
+ADDI r2, r0, 0b1:uint
+ADDI r3, r0, 0b11111111:uint
+ADDI r4, r0, 0b101010101010:uint
+
+; --- I-TYPE: Signed types ---
+ADDI r1, r0, 42:sint
+ADDI r2, r0, 0xFF:sint
+XORI r3, r1, 7:sint
+ANDI r4, r2, 0xF:sint
+
+; --- I-TYPE: Modular types ---
+ADDI r1, r0, 100:umod
+ADDI r2, r0, 200:smod
+XORI r3, r1, 0x55:umod
+ORI r4, r2, 0b1100:smod
+
+; --- I-TYPE: Fixed-point types ---
+ADDI r1, r0, 1.5:q32.8
+ADDI r2, r0, 0.25:q32.8
+ADDI r3, r0, 99.99:q32.8
+ADDI r4, r0, 0.0:q32.8
+ADDI r5, r0, 3.14159:q24.16
+ADDI r6, r0, 1.0:q24.16
+ADDI r7, r0, 0.5:q8.32
+
+; --- I-TYPE: Bool type ---
+ADDI r1, r0, 1:bool
+ADDI r2, r0, 0:bool
+ADDI r3, r0, 255:bool      ; should clamp to 1
+
+; --- I-TYPE: Weird formatting ---
+    ADDI r1, r0, 42:uint   ; leading whitespace
+		ADDI r2, r0, 0x10:uint  ; leading tabs
+ADDI    r3,   r0,   7:uint  ; extra spaces everywhere
+  ADDI   r4,r0,0xFF:uint    ; no spaces after commas
+ADDI r5, r0, 100:uint;comment jammed against instruction
+
+; --- I-TYPE: r0 as destination (writes to zero reg) ---
+ADDI r0, r0, 42:uint
+
+; --- C-TYPE: Every type conversion ---
+CONVERT r1, r0, uint
+CONVERT r2, r0, sint
+CONVERT r3, r0, umod
+CONVERT r4, r0, smod
+CONVERT r5, r0, q32.8
+CONVERT r6, r0, q24.16
+CONVERT r7, r0, q8.32
+CONVERT r8, r0, bool
+
+; --- C-TYPE: Non-r0 source ---
+CONVERT r3, r1, q32.8
+CONVERT r4, r2, sint
+CONVERT r5, r5, uint       ; convert self
+
+; --- C-TYPE: High registers ---
+CONVERT r22, r21, q32.8
+
+; --- C-TYPE: Weird formatting ---
+    CONVERT r1, r0, uint    ; leading whitespace
+		CONVERT r2, r0, sint ; leading tabs
+CONVERT    r3,   r0,   q32.8 ; extra spaces
+  CONVERT   r4,r0,bool      ; no spaces after commas
+CONVERT r5, r0, uint;comment jammed
+
+; --- MIXED: Realistic short program ---
+CONVERT r1, r0, q32.8      ; r1 = q32.8(0.0)
+ADDI r2, r1, 1.5:q32.8     ; r2 = q32.8(1.5)
+ADDI r3, r1, 2.25:q32.8    ; r3 = q32.8(2.25)
+ADD r4, r2, r3              ; r4 = q32.8(3.75)
+MUL r5, r2, r3             ; r5 = q32.8(1.5 * 2.25)
+SUB r6, r4, r2              ; r6 = q32.8(2.25)
+
+; --- MIXED: Type bootstrapping pattern ---
+CONVERT r10, r0, sint       ; r10 = S.Int(0)
+ADDI r11, r10, 42:sint      ; r11 = S.Int(42)
+CONVERT r12, r0, umod       ; r12 = WrapU(0)
+ADDI r13, r12, 0xFF:umod    ; r13 = WrapU(255)

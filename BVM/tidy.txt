@@ -1,0 +1,1011 @@
+Enabled checks:
+    boost-use-ranges
+    boost-use-to-string
+    bugprone-argument-comment
+    bugprone-assert-side-effect
+    bugprone-assignment-in-if-condition
+    bugprone-bad-signal-to-kill-thread
+    bugprone-bitwise-pointer-cast
+    bugprone-bool-pointer-implicit-conversion
+    bugprone-branch-clone
+    bugprone-capturing-this-in-member-variable
+    bugprone-casting-through-void
+    bugprone-chained-comparison
+    bugprone-command-processor
+    bugprone-compare-pointer-to-member-virtual-function
+    bugprone-copy-constructor-init
+    bugprone-copy-constructor-mutates-argument
+    bugprone-crtp-constructor-accessibility
+    bugprone-dangling-handle
+    bugprone-default-operator-new-on-overaligned-type
+    bugprone-derived-method-shadowing-base-method
+    bugprone-dynamic-static-initializers
+    bugprone-empty-catch
+    bugprone-exception-copy-constructor-throws
+    bugprone-float-loop-counter
+    bugprone-fold-init-type
+    bugprone-forward-declaration-namespace
+    bugprone-forwarding-reference-overload
+    bugprone-implicit-widening-of-multiplication-result
+    bugprone-inaccurate-erase
+    bugprone-inc-dec-in-conditions
+    bugprone-incorrect-enable-if
+    bugprone-incorrect-enable-shared-from-this
+    bugprone-incorrect-roundings
+    bugprone-infinite-loop
+    bugprone-integer-division
+    bugprone-invalid-enum-default-initialization
+    bugprone-lambda-function-name
+    bugprone-macro-parentheses
+    bugprone-macro-repeated-side-effects
+    bugprone-misleading-setter-of-reference
+    bugprone-misplaced-operator-in-strlen-in-alloc
+    bugprone-misplaced-pointer-arithmetic-in-alloc
+    bugprone-misplaced-widening-cast
+    bugprone-move-forwarding-reference
+    bugprone-multi-level-implicit-pointer-conversion
+    bugprone-multiple-new-in-one-expression
+    bugprone-multiple-statement-macro
+    bugprone-narrowing-conversions
+    bugprone-no-escape
+    bugprone-non-zero-enum-to-bool-conversion
+    bugprone-nondeterministic-pointer-iteration-order
+    bugprone-not-null-terminated-result
+    bugprone-optional-value-conversion
+    bugprone-parent-virtual-call
+    bugprone-pointer-arithmetic-on-polymorphic-object
+    bugprone-posix-return
+    bugprone-random-generator-seed
+    bugprone-raw-memory-call-on-non-trivial-type
+    bugprone-redundant-branch-condition
+    bugprone-reserved-identifier
+    bugprone-return-const-ref-from-parameter
+    bugprone-shared-ptr-array-mismatch
+    bugprone-signal-handler
+    bugprone-signed-char-misuse
+    bugprone-sizeof-container
+    bugprone-sizeof-expression
+    bugprone-spuriously-wake-up-functions
+    bugprone-standalone-empty
+    bugprone-std-namespace-modification
+    bugprone-string-constructor
+    bugprone-string-integer-assignment
+    bugprone-string-literal-with-embedded-nul
+    bugprone-stringview-nullptr
+    bugprone-suspicious-enum-usage
+    bugprone-suspicious-include
+    bugprone-suspicious-memory-comparison
+    bugprone-suspicious-memset-usage
+    bugprone-suspicious-missing-comma
+    bugprone-suspicious-realloc-usage
+    bugprone-suspicious-semicolon
+    bugprone-suspicious-string-compare
+    bugprone-suspicious-stringview-data-usage
+    bugprone-swapped-arguments
+    bugprone-switch-missing-default-case
+    bugprone-tagged-union-member-count
+    bugprone-terminating-continue
+    bugprone-throw-keyword-missing
+    bugprone-too-small-loop-variable
+    bugprone-unchecked-optional-access
+    bugprone-unchecked-string-to-number-conversion
+    bugprone-undefined-memory-manipulation
+    bugprone-undelegated-constructor
+    bugprone-unhandled-exception-at-new
+    bugprone-unhandled-self-assignment
+    bugprone-unintended-char-ostream-output
+    bugprone-unique-ptr-array-mismatch
+    bugprone-unsafe-functions
+    bugprone-unused-local-non-trivial-variable
+    bugprone-unused-raii
+    bugprone-unused-return-value
+    bugprone-use-after-move
+    bugprone-virtual-near-miss
+    cert-arr39-c
+    cert-con36-c
+    cert-con54-cpp
+    cert-ctr56-cpp
+    cert-dcl03-c
+    cert-dcl16-c
+    cert-dcl37-c
+    cert-dcl50-cpp
+    cert-dcl51-cpp
+    cert-dcl54-cpp
+    cert-dcl58-cpp
+    cert-dcl59-cpp
+    cert-env33-c
+    cert-err09-cpp
+    cert-err33-c
+    cert-err34-c
+    cert-err52-cpp
+    cert-err60-cpp
+    cert-err61-cpp
+    cert-exp42-c
+    cert-fio38-c
+    cert-flp30-c
+    cert-flp37-c
+    cert-int09-c
+    cert-mem57-cpp
+    cert-msc24-c
+    cert-msc30-c
+    cert-msc32-c
+    cert-msc33-c
+    cert-msc50-cpp
+    cert-msc51-cpp
+    cert-msc54-cpp
+    cert-oop11-cpp
+    cert-oop54-cpp
+    cert-oop57-cpp
+    cert-oop58-cpp
+    cert-pos44-c
+    cert-pos47-c
+    cert-sig30-c
+    cert-str34-c
+    clang-analyzer-apiModeling.Errno
+    clang-analyzer-apiModeling.TrustNonnull
+    clang-analyzer-apiModeling.TrustReturnsNonnull
+    clang-analyzer-apiModeling.google.GTest
+    clang-analyzer-apiModeling.llvm.CastValue
+    clang-analyzer-apiModeling.llvm.ReturnValue
+    clang-analyzer-core.BitwiseShift
+    clang-analyzer-core.CallAndMessage
+    clang-analyzer-core.DivideZero
+    clang-analyzer-core.DynamicTypePropagation
+    clang-analyzer-core.FixedAddressDereference
+    clang-analyzer-core.NonNullParamChecker
+    clang-analyzer-core.NonnilStringConstants
+    clang-analyzer-core.NullDereference
+    clang-analyzer-core.NullPointerArithm
+    clang-analyzer-core.StackAddressEscape
+    clang-analyzer-core.UndefinedBinaryOperatorResult
+    clang-analyzer-core.VLASize
+    clang-analyzer-core.builtin.AssumeModeling
+    clang-analyzer-core.builtin.BuiltinFunctions
+    clang-analyzer-core.builtin.NoReturnFunctions
+    clang-analyzer-core.uninitialized.ArraySubscript
+    clang-analyzer-core.uninitialized.Assign
+    clang-analyzer-core.uninitialized.Branch
+    clang-analyzer-core.uninitialized.CapturedBlockVariable
+    clang-analyzer-core.uninitialized.NewArraySize
+    clang-analyzer-core.uninitialized.UndefReturn
+    clang-analyzer-cplusplus.ArrayDelete
+    clang-analyzer-cplusplus.InnerPointer
+    clang-analyzer-cplusplus.Move
+    clang-analyzer-cplusplus.NewDelete
+    clang-analyzer-cplusplus.NewDeleteLeaks
+    clang-analyzer-cplusplus.PlacementNew
+    clang-analyzer-cplusplus.PureVirtualCall
+    clang-analyzer-cplusplus.SelfAssignment
+    clang-analyzer-cplusplus.SmartPtrModeling
+    clang-analyzer-cplusplus.StringChecker
+    clang-analyzer-deadcode.DeadStores
+    clang-analyzer-fuchsia.HandleChecker
+    clang-analyzer-nullability.NullPassedToNonnull
+    clang-analyzer-nullability.NullReturnedFromNonnull
+    clang-analyzer-nullability.NullableDereferenced
+    clang-analyzer-nullability.NullablePassedToNonnull
+    clang-analyzer-nullability.NullableReturnedFromNonnull
+    clang-analyzer-optin.core.EnumCastOutOfRange
+    clang-analyzer-optin.cplusplus.UninitializedObject
+    clang-analyzer-optin.cplusplus.VirtualCall
+    clang-analyzer-optin.mpi.MPI-Checker
+    clang-analyzer-optin.osx.OSObjectCStyleCast
+    clang-analyzer-optin.osx.cocoa.localizability.EmptyLocalizationContextChecker
+    clang-analyzer-optin.osx.cocoa.localizability.NonLocalizedStringChecker
+    clang-analyzer-optin.performance.GCDAntipattern
+    clang-analyzer-optin.performance.Padding
+    clang-analyzer-optin.portability.UnixAPI
+    clang-analyzer-optin.taint.GenericTaint
+    clang-analyzer-optin.taint.TaintPropagation
+    clang-analyzer-optin.taint.TaintedAlloc
+    clang-analyzer-optin.taint.TaintedDiv
+    clang-analyzer-osx.API
+    clang-analyzer-osx.MIG
+    clang-analyzer-osx.NumberObjectConversion
+    clang-analyzer-osx.OSObjectRetainCount
+    clang-analyzer-osx.ObjCProperty
+    clang-analyzer-osx.SecKeychainAPI
+    clang-analyzer-osx.cocoa.AtSync
+    clang-analyzer-osx.cocoa.AutoreleaseWrite
+    clang-analyzer-osx.cocoa.ClassRelease
+    clang-analyzer-osx.cocoa.Dealloc
+    clang-analyzer-osx.cocoa.IncompatibleMethodTypes
+    clang-analyzer-osx.cocoa.Loops
+    clang-analyzer-osx.cocoa.MissingSuperCall
+    clang-analyzer-osx.cocoa.NSAutoreleasePool
+    clang-analyzer-osx.cocoa.NSError
+    clang-analyzer-osx.cocoa.NilArg
+    clang-analyzer-osx.cocoa.NonNilReturnValue
+    clang-analyzer-osx.cocoa.ObjCGenerics
+    clang-analyzer-osx.cocoa.RetainCount
+    clang-analyzer-osx.cocoa.RetainCountBase
+    clang-analyzer-osx.cocoa.RunLoopAutoreleaseLeak
+    clang-analyzer-osx.cocoa.SelfInit
+    clang-analyzer-osx.cocoa.SuperDealloc
+    clang-analyzer-osx.cocoa.UnusedIvars
+    clang-analyzer-osx.cocoa.VariadicMethodTypes
+    clang-analyzer-osx.coreFoundation.CFError
+    clang-analyzer-osx.coreFoundation.CFNumber
+    clang-analyzer-osx.coreFoundation.CFRetainRelease
+    clang-analyzer-osx.coreFoundation.containers.OutOfBounds
+    clang-analyzer-osx.coreFoundation.containers.PointerSizedValues
+    clang-analyzer-security.ArrayBound
+    clang-analyzer-security.FloatLoopCounter
+    clang-analyzer-security.MmapWriteExec
+    clang-analyzer-security.PointerSub
+    clang-analyzer-security.PutenvStackArray
+    clang-analyzer-security.SetgidSetuidOrder
+    clang-analyzer-security.VAList
+    clang-analyzer-security.cert.env.InvalidPtr
+    clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling
+    clang-analyzer-security.insecureAPI.SecuritySyntaxChecker
+    clang-analyzer-security.insecureAPI.UncheckedReturn
+    clang-analyzer-security.insecureAPI.bcmp
+    clang-analyzer-security.insecureAPI.bcopy
+    clang-analyzer-security.insecureAPI.bzero
+    clang-analyzer-security.insecureAPI.decodeValueOfObjCType
+    clang-analyzer-security.insecureAPI.getpw
+    clang-analyzer-security.insecureAPI.gets
+    clang-analyzer-security.insecureAPI.mkstemp
+    clang-analyzer-security.insecureAPI.mktemp
+    clang-analyzer-security.insecureAPI.rand
+    clang-analyzer-security.insecureAPI.strcpy
+    clang-analyzer-security.insecureAPI.vfork
+    clang-analyzer-unix.API
+    clang-analyzer-unix.BlockInCriticalSection
+    clang-analyzer-unix.Chroot
+    clang-analyzer-unix.DynamicMemoryModeling
+    clang-analyzer-unix.Errno
+    clang-analyzer-unix.Malloc
+    clang-analyzer-unix.MallocSizeof
+    clang-analyzer-unix.MismatchedDeallocator
+    clang-analyzer-unix.StdCLibraryFunctions
+    clang-analyzer-unix.Stream
+    clang-analyzer-unix.Vfork
+    clang-analyzer-unix.cstring.BadSizeArg
+    clang-analyzer-unix.cstring.CStringModeling
+    clang-analyzer-unix.cstring.NotNullTerminated
+    clang-analyzer-unix.cstring.NullArg
+    clang-analyzer-webkit.NoUncountedMemberChecker
+    clang-analyzer-webkit.RefCntblBaseVirtualDtor
+    clang-analyzer-webkit.UncountedLambdaCapturesChecker
+    concurrency-mt-unsafe
+    concurrency-thread-canceltype-asynchronous
+    cppcoreguidelines-avoid-c-arrays
+    cppcoreguidelines-avoid-capturing-lambda-coroutines
+    cppcoreguidelines-avoid-const-or-ref-data-members
+    cppcoreguidelines-avoid-goto
+    cppcoreguidelines-avoid-non-const-global-variables
+    cppcoreguidelines-avoid-reference-coroutine-parameters
+    cppcoreguidelines-c-copy-assignment-signature
+    cppcoreguidelines-explicit-virtual-functions
+    cppcoreguidelines-init-variables
+    cppcoreguidelines-interfaces-global-init
+    cppcoreguidelines-macro-to-enum
+    cppcoreguidelines-macro-usage
+    cppcoreguidelines-misleading-capture-default-by-value
+    cppcoreguidelines-missing-std-forward
+    cppcoreguidelines-narrowing-conversions
+    cppcoreguidelines-no-malloc
+    cppcoreguidelines-no-suspend-with-lock
+    cppcoreguidelines-noexcept-destructor
+    cppcoreguidelines-noexcept-move-operations
+    cppcoreguidelines-noexcept-swap
+    cppcoreguidelines-non-private-member-variables-in-classes
+    cppcoreguidelines-owning-memory
+    cppcoreguidelines-prefer-member-initializer
+    cppcoreguidelines-pro-bounds-array-to-pointer-decay
+    cppcoreguidelines-pro-bounds-constant-array-index
+    cppcoreguidelines-pro-bounds-pointer-arithmetic
+    cppcoreguidelines-pro-type-const-cast
+    cppcoreguidelines-pro-type-cstyle-cast
+    cppcoreguidelines-pro-type-member-init
+    cppcoreguidelines-pro-type-reinterpret-cast
+    cppcoreguidelines-pro-type-static-cast-downcast
+    cppcoreguidelines-pro-type-union-access
+    cppcoreguidelines-pro-type-vararg
+    cppcoreguidelines-rvalue-reference-param-not-moved
+    cppcoreguidelines-slicing
+    cppcoreguidelines-special-member-functions
+    cppcoreguidelines-use-default-member-init
+    cppcoreguidelines-use-enum-class
+    cppcoreguidelines-virtual-class-destructor
+    darwin-avoid-spinlock
+    darwin-dispatch-once-nonstatic
+    hicpp-avoid-c-arrays
+    hicpp-avoid-goto
+    hicpp-braces-around-statements
+    hicpp-deprecated-headers
+    hicpp-exception-baseclass
+    hicpp-explicit-conversions
+    hicpp-function-size
+    hicpp-ignored-remove-result
+    hicpp-invalid-access-moved
+    hicpp-member-init
+    hicpp-move-const-arg
+    hicpp-multiway-paths-covered
+    hicpp-named-parameter
+    hicpp-new-delete-operators
+    hicpp-no-array-decay
+    hicpp-no-assembler
+    hicpp-no-malloc
+    hicpp-noexcept-move
+    hicpp-special-member-functions
+    hicpp-static-assert
+    hicpp-undelegated-constructor
+    hicpp-uppercase-literal-suffix
+    hicpp-use-emplace
+    hicpp-use-equals-default
+    hicpp-use-equals-delete
+    hicpp-use-noexcept
+    hicpp-use-nullptr
+    hicpp-use-override
+    hicpp-vararg
+    linuxkernel-must-check-errs
+    llvm-else-after-return
+    llvm-namespace-comment
+    llvm-prefer-isa-or-dyn-cast-in-conditionals
+    llvm-prefer-register-over-unsigned
+    llvm-prefer-static-over-anonymous-namespace
+    llvm-qualified-auto
+    llvm-twine-local
+    llvm-use-new-mlir-op-builder
+    llvm-use-ranges
+    misc-anonymous-namespace-in-header
+    misc-confusable-identifiers
+    misc-const-correctness
+    misc-coroutine-hostile-raii
+    misc-definitions-in-headers
+    misc-header-include-cycle
+    misc-include-cleaner
+    misc-misleading-bidirectional
+    misc-misleading-identifier
+    misc-misplaced-const
+    misc-multiple-inheritance
+    misc-new-delete-overloads
+    misc-non-copyable-objects
+    misc-non-private-member-variables-in-classes
+    misc-override-with-different-visibility
+    misc-predictable-rand
+    misc-redundant-expression
+    misc-static-assert
+    misc-throw-by-value-catch-by-reference
+    misc-unconventional-assign-operator
+    misc-uniqueptr-reset-release
+    misc-unused-alias-decls
+    misc-unused-parameters
+    misc-unused-using-decls
+    misc-use-internal-linkage
+    modernize-avoid-bind
+    modernize-avoid-c-arrays
+    modernize-avoid-c-style-cast
+    modernize-avoid-setjmp-longjmp
+    modernize-avoid-variadic-functions
+    modernize-concat-nested-namespaces
+    modernize-deprecated-headers
+    modernize-deprecated-ios-base-aliases
+    modernize-loop-convert
+    modernize-macro-to-enum
+    modernize-make-shared
+    modernize-make-unique
+    modernize-min-max-use-initializer-list
+    modernize-pass-by-value
+    modernize-raw-string-literal
+    modernize-redundant-void-arg
+    modernize-replace-auto-ptr
+    modernize-replace-disallow-copy-and-assign-macro
+    modernize-replace-random-shuffle
+    modernize-return-braced-init-list
+    modernize-shrink-to-fit
+    modernize-type-traits
+    modernize-unary-static-assert
+    modernize-use-bool-literals
+    modernize-use-constraints
+    modernize-use-default-member-init
+    modernize-use-designated-initializers
+    modernize-use-emplace
+    modernize-use-equals-default
+    modernize-use-equals-delete
+    modernize-use-integer-sign-comparison
+    modernize-use-nodiscard
+    modernize-use-noexcept
+    modernize-use-nullptr
+    modernize-use-override
+    modernize-use-ranges
+    modernize-use-scoped-lock
+    modernize-use-starts-ends-with
+    modernize-use-std-format
+    modernize-use-std-numbers
+    modernize-use-std-print
+    modernize-use-transparent-functors
+    modernize-use-uncaught-exceptions
+    modernize-use-using
+    mpi-buffer-deref
+    mpi-type-mismatch
+    openmp-exception-escape
+    openmp-use-default-none
+    performance-avoid-endl
+    performance-faster-string-find
+    performance-for-range-copy
+    performance-implicit-conversion-in-loop
+    performance-inefficient-algorithm
+    performance-inefficient-string-concatenation
+    performance-inefficient-vector-operation
+    performance-move-const-arg
+    performance-move-constructor-init
+    performance-no-automatic-move
+    performance-no-int-to-ptr
+    performance-noexcept-destructor
+    performance-noexcept-move-constructor
+    performance-noexcept-swap
+    performance-trivially-destructible
+    performance-type-promotion-in-math-fn
+    performance-unnecessary-copy-initialization
+    performance-unnecessary-value-param
+    portability-restrict-system-includes
+    portability-simd-intrinsics
+    portability-std-allocator-const
+    portability-template-virtual-member-function
+    readability-ambiguous-smartptr-reset-call
+    readability-avoid-const-params-in-decls
+    readability-avoid-nested-conditional-operator
+    readability-avoid-return-with-void-value
+    readability-avoid-unconditional-preprocessor-if
+    readability-braces-around-statements
+    readability-const-return-type
+    readability-container-contains
+    readability-container-data-pointer
+    readability-container-size-empty
+    readability-convert-member-functions-to-static
+    readability-delete-null-pointer
+    readability-duplicate-include
+    readability-else-after-return
+    readability-enum-initial-value
+    readability-function-cognitive-complexity
+    readability-function-size
+    readability-identifier-naming
+    readability-implicit-bool-conversion
+    readability-inconsistent-declaration-parameter-name
+    readability-inconsistent-ifelse-braces
+    readability-isolate-declaration
+    readability-make-member-function-const
+    readability-math-missing-parentheses
+    readability-misleading-indentation
+    readability-misplaced-array-index
+    readability-named-parameter
+    readability-non-const-parameter
+    readability-operators-representation
+    readability-qualified-auto
+    readability-redundant-access-specifiers
+    readability-redundant-casting
+    readability-redundant-control-flow
+    readability-redundant-declaration
+    readability-redundant-function-ptr-dereference
+    readability-redundant-inline-specifier
+    readability-redundant-member-init
+    readability-redundant-parentheses
+    readability-redundant-preprocessor
+    readability-redundant-smartptr-get
+    readability-redundant-string-cstr
+    readability-redundant-string-init
+    readability-redundant-typename
+    readability-reference-to-constructed-temporary
+    readability-simplify-boolean-expr
+    readability-simplify-subscript-expr
+    readability-static-accessed-through-instance
+    readability-static-definition-in-anonymous-namespace
+    readability-string-compare
+    readability-suspicious-call-argument
+    readability-uniqueptr-delete-release
+    readability-uppercase-literal-suffix
+    readability-use-anyofallof
+    readability-use-concise-preprocessor-directives
+    readability-use-std-min-max
+
+Running clang-tidy in 10 threads for 1 files out of 1 in compilation database ...
+[1/1][2.7s] /opt/homebrew/bin/clang-tidy -p=build /Users/mwd/Developer/BROT/BVM/src/main.cpp
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:6:1: error: included header cmath is not used directly [misc-include-cleaner,-warnings-as-errors]
+    6 | #include <cmath>
+      | ^~~~~~~~~~~~~~~~
+    7 | #include <cstddef>
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:11:1: error: included header initializer_list is not used directly [misc-include-cleaner,-warnings-as-errors]
+   11 | #include <initializer_list>
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+   12 | #include <iostream>
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:12:1: error: included header iostream is not used directly [misc-include-cleaner,-warnings-as-errors]
+   12 | #include <iostream>
+      | ^~~~~~~~~~~~~~~~~~~
+   13 | #include <map>
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:14:1: error: included header ostream is not used directly [misc-include-cleaner,-warnings-as-errors]
+   14 | #include <ostream>
+      | ^~~~~~~~~~~~~~~~~~
+   15 | #include <ranges>
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:16:1: error: included header set is not used directly [misc-include-cleaner,-warnings-as-errors]
+   16 | #include <set>
+      | ^~~~~~~~~~~~~~
+   17 | #include <stdexcept>
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:37:28: error: implicit conversion changes signedness: 'unsigned long long' to 'const int64_t' (aka 'const long long') [clang-diagnostic-sign-conversion,-warnings-as-errors]
+   37 | const int64_t SMIN_35BIT = -(1ULL << 34);
+      |               ~~~~~~~~~~   ^~~~~~~~~~~~~
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:37:28: error: narrowing conversion from constant value 18446744056529682432 (0xFFFFFFFC00000000) of type 'unsigned long long' to signed type 'int64_t' (aka 'long long') is implementation-defined [bugprone-narrowing-conversions,cppcoreguidelines-narrowing-conversions,-warnings-as-errors]
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:40:26: error: variable 'GPR' can be made static or moved into an anonymous namespace to enforce internal linkage [misc-use-internal-linkage,-warnings-as-errors]
+   40 | std::array<uint64_t, 23> GPR;
+      |                          ^
+      | static 
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:40:26: error: variable 'GPR' is non-const and globally accessible, consider making it const [cppcoreguidelines-avoid-non-const-global-variables,-warnings-as-errors]
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:41:28: error: variable 'PR' can be made static or moved into an anonymous namespace to enforce internal linkage [misc-use-internal-linkage,-warnings-as-errors]
+   41 | std::array<PointerReg, 13> PR;
+      |                            ^
+      | static 
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:41:28: error: variable 'PR' is non-const and globally accessible, consider making it const [cppcoreguidelines-avoid-non-const-global-variables,-warnings-as-errors]
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:42:28: error: variable 'MEM' can be made static or moved into an anonymous namespace to enforce internal linkage [misc-use-internal-linkage,-warnings-as-errors]
+   42 | std::array<uint64_t, 8192> MEM;
+      |                            ^
+      | static 
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:42:28: error: variable 'MEM' is non-const and globally accessible, consider making it const [cppcoreguidelines-avoid-non-const-global-variables,-warnings-as-errors]
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:44:10: error: function 'extract_bits' can be made static or moved into an anonymous namespace to enforce internal linkage [misc-use-internal-linkage,-warnings-as-errors]
+   44 | uint64_t extract_bits(const uint64_t &val, int high, int low)
+      |          ^
+      | static 
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:46:5: error: variable 'width' of type 'int' can be declared 'const' [misc-const-correctness,-warnings-as-errors]
+   46 |     int width = high - low + 1;
+      |     ^
+      |         const 
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:47:5: error: variable 'mask' of type 'uint64_t' (aka 'unsigned long long') can be declared 'const' [misc-const-correctness,-warnings-as-errors]
+   47 |     uint64_t mask = (1ULL << width) - 1;
+      |     ^
+      |              const 
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:48:5: error: variable 'ret' of type 'uint64_t' (aka 'unsigned long long') can be declared 'const' [misc-const-correctness,-warnings-as-errors]
+   48 |     uint64_t ret = (val >> low) & mask;
+      |     ^
+      |              const 
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:52:9: error: function 'process_status_to_sat_or_clamp' can be made static or moved into an anonymous namespace to enforce internal linkage [misc-use-internal-linkage,-warnings-as-errors]
+   52 | int64_t process_status_to_sat_or_clamp(int64_t result, ArithemeticFlag flag, uint8_t type_bin)
+      |         ^
+      | static 
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:58:9: error: do not use 'else' after 'return' [llvm-else-after-return,readability-else-after-return,-warnings-as-errors]
+   58 |         else if (flag == ArithemeticFlag::UNDERFLOW_F) { return SMIN_35BIT; }
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   59 |         else { return result; }
+      |         ~~~~~~~~~~~~~~~~~~~~~~~
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:65:10: error: function 'process_status_to_sat_or_clamp' can be made static or moved into an anonymous namespace to enforce internal linkage [misc-use-internal-linkage,-warnings-as-errors]
+   65 | uint64_t process_status_to_sat_or_clamp(uint64_t result, ArithemeticFlag flag, uint8_t type_bin)
+      |          ^
+      | static 
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:71:9: error: do not use 'else' after 'return' [llvm-else-after-return,readability-else-after-return,-warnings-as-errors]
+   71 |         else { return result; }
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+      |         return result;
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:77:6: error: function 'print_status' can be made static or moved into an anonymous namespace to enforce internal linkage [misc-use-internal-linkage,-warnings-as-errors]
+   77 | void print_status(const size_t PC)
+      |      ^
+      | static 
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:80:28: error: statement should be inside braces [hicpp-braces-around-statements,readability-braces-around-statements,-warnings-as-errors]
+   80 |     if (!logfile.is_open()) throw std::invalid_argument("Could not open log file!");
+      |                            ^                                                        
+      |                             {
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:82:10: error: no header providing "std::println" is directly included [misc-include-cleaner,-warnings-as-errors]
+   15 |     std::println(logfile, "=============================");
+      |          ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:83:10: error: no header providing "std::println" is directly included [misc-include-cleaner,-warnings-as-errors]
+   83 |     std::println(logfile, "‖ {:1} {:^20} ‖", "PC: ", PC);
+      |          ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:87:9: error: variable 'type' of type 'DataType' can be declared 'const' [misc-const-correctness,-warnings-as-errors]
+   87 |         DataType type = static_cast<DataType>(extract_bits(GPR[i], 40, 35));
+      |         ^
+      |                  const 
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:87:60: error: do not use array subscript when the index is not an integer constant expression [cppcoreguidelines-pro-bounds-constant-array-index,-warnings-as-errors]
+   87 |         DataType type = static_cast<DataType>(extract_bits(GPR[i], 40, 35));
+      |                                                            ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:90:27: error: implicit conversion changes signedness: 'uint64_t' (aka 'unsigned long long') to 'int64_t' (aka 'long long') [clang-diagnostic-sign-conversion,-warnings-as-errors]
+   90 |             int64_t val = extract_bits(GPR[i], 34, 0);
+      |                     ~~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:90:27: error: narrowing conversion from 'uint64_t' (aka 'unsigned long long') to signed type 'int64_t' (aka 'long long') is implementation-defined [bugprone-narrowing-conversions,cppcoreguidelines-narrowing-conversions,-warnings-as-errors]
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:90:40: error: do not use array subscript when the index is not an integer constant expression [cppcoreguidelines-pro-bounds-constant-array-index,-warnings-as-errors]
+   90 |             int64_t val = extract_bits(GPR[i], 34, 0);
+      |                                        ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:91:18: error: no header providing "std::println" is directly included [misc-include-cleaner,-warnings-as-errors]
+   91 |             std::println(logfile, "‖ {:1} {:2}: {:>8} {:064b} | {:>11} ‖", "GPR", i,
+      |                  ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:92:88: error: do not use array subscript when the index is not an integer constant expression [cppcoreguidelines-pro-bounds-constant-array-index,-warnings-as-errors]
+   92 |                          UINT_TO_TYPE_STRING.find(static_cast<uint8_t>(type))->second, GPR[i], val);
+      |                                                                                        ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:96:41: error: do not use array subscript when the index is not an integer constant expression [cppcoreguidelines-pro-bounds-constant-array-index,-warnings-as-errors]
+   96 |             uint64_t val = extract_bits(GPR[i], 34, 0);
+      |                                         ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:97:18: error: no header providing "std::println" is directly included [misc-include-cleaner,-warnings-as-errors]
+   97 |             std::println(logfile, "‖ {:1} {:2}: {:>8} {:064b} | {:>11} ‖", "GPR", i,
+      |                  ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:98:88: error: do not use array subscript when the index is not an integer constant expression [cppcoreguidelines-pro-bounds-constant-array-index,-warnings-as-errors]
+   98 |                          UINT_TO_TYPE_STRING.find(static_cast<uint8_t>(type))->second, GPR[i], val);
+      |                                                                                        ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:104:5: error: function 'main' has cognitive complexity of 55 (threshold 25) [readability-function-cognitive-complexity,-warnings-as-errors]
+  104 | int main(int argc, char *argv[])
+      |     ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:110:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+  110 |     if (bvm_input.find(".hex") == std::string::npos) throw std::invalid_argument("Input must be a hex file! (ends in .hex)");
+      |     ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:117:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+  117 |     while (std::getline(bvm_input_stream, curr_line)) { bvm_input_buffer.push_back(std::pair(curr_line, line_num++)); }
+      |     ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:119:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+  119 |     for (auto &[line, _] : bvm_input_buffer)
+      |     ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:121:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+  121 |         if (auto it = line.find_first_of("\\"); it != std::string::npos) line.erase(it);
+      |         ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:126:19: note: nesting level increased to 1
+  126 |                   [](std::pair<string, size_t> p) { return p.first.empty() || std::ranges::all_of(p.first, isspace); });
+      |                   ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:126:76: note: +1
+  126 |                   [](std::pair<string, size_t> p) { return p.first.empty() || std::ranges::all_of(p.first, isspace); });
+      |                                                                            ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:130:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+  130 |     assert(bvm_input_buffer.size() > 0);
+      |     ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/assert.h:72:32: note: expanded from macro 'assert'
+   72 |     (__builtin_expect(!(e), 0) ? __assert_rtn(__func__, __ASSERT_FILE_NAME, __LINE__, #e) : (void)0)
+      |                                ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:132:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+  132 |     while (PC < bvm_input_buffer.size())
+      |     ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:135:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+  135 |         assert(extract_bits(GPR[0], 34, 0) == 0);
+      |         ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/assert.h:72:32: note: expanded from macro 'assert'
+   72 |     (__builtin_expect(!(e), 0) ? __assert_rtn(__func__, __ASSERT_FILE_NAME, __LINE__, #e) : (void)0)
+      |                                ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:144:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+  144 |         if (result.ec != std::errc{})
+      |         ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:151:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+  151 |         if (instruction_tag_field != INSTRUCTION_TYPE_TAG)
+      |         ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:160:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+  160 |         if (auto it = LABEL_TO_INFOSTRUCT.find(static_cast<InstructionLabel>(opcode_field)); it == LABEL_TO_INFOSTRUCT.end())
+      |         ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:163:9: note: +1, nesting level increased to 2
+  163 |         else instruction_struct = it->second;
+      |         ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:166:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+  166 |         switch (instruction_struct.group)
+      |         ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:176:17: note: +3, including nesting penalty of 2, nesting level increased to 3
+  176 |                 switch (instruction_struct.label)
+      |                 ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:251:17: note: +3, including nesting penalty of 2, nesting level increased to 3
+  251 |                 if (static_cast<uint8_t>(type) > HIGHEST_TYPE_VAL || type == DataType::Free)
+      |                 ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:251:67: note: +1
+  251 |                 if (static_cast<uint8_t>(type) > HIGHEST_TYPE_VAL || type == DataType::Free)
+      |                                                                   ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:256:17: note: +3, including nesting penalty of 2, nesting level increased to 3
+  256 |                 if (uint8_t type_dest = (extract_bits(GPR.at(rd), 40, 35)); type_dest > HIGHEST_TYPE_VAL)
+      |                 ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:265:17: note: +3, including nesting penalty of 2, nesting level increased to 3
+  265 |                 if (SIGNED_TYPES.contains(type))
+      |                 ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:272:17: note: +3, including nesting penalty of 2, nesting level increased to 3
+  272 |                 switch (instruction_struct.label)
+      |                 ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:279:25: note: +4, including nesting penalty of 3, nesting level increased to 4
+  279 |                         if (SIGNED_TYPES.contains(type) && type != DataType::Smod)
+      |                         ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:279:57: note: +1
+  279 |                         if (SIGNED_TYPES.contains(type) && type != DataType::Smod)
+      |                                                         ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:283:29: note: +5, including nesting penalty of 4, nesting level increased to 5
+  283 |                             if ((rs1_val_signed > 0 && imm_signed > 0) && result < 0)
+      |                             ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:283:72: note: +1
+  283 |                             if ((rs1_val_signed > 0 && imm_signed > 0) && result < 0)
+      |                                                                        ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:288:34: note: +1, nesting level increased to 5
+  288 |                             else if (((rs1_val_signed < 0) && (imm_signed < 0)) && result > 0)
+      |                                  ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:288:81: note: +1
+  288 |                             else if (((rs1_val_signed < 0) && (imm_signed < 0)) && result > 0)
+      |                                                                                 ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:294:30: note: +1, nesting level increased to 4
+  294 |                         else if (UNSIGNED_TYPES.contains(type) && type != DataType::Umod)
+      |                              ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:294:64: note: +1
+  294 |                         else if (UNSIGNED_TYPES.contains(type) && type != DataType::Umod)
+      |                                                                ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:297:29: note: +5, including nesting penalty of 4, nesting level increased to 5
+  297 |                             if (result > UMAX_35BIT) result = UMAX_35BIT;
+      |                             ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:107:36: error: do not use pointer arithmetic [cppcoreguidelines-pro-bounds-pointer-arithmetic,-warnings-as-errors]
+  107 |     vector<string> input_args(argv + 1, argv + argc);
+      |                                    ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:107:46: error: do not use pointer arithmetic [cppcoreguidelines-pro-bounds-pointer-arithmetic,-warnings-as-errors]
+  107 |     vector<string> input_args(argv + 1, argv + argc);
+      |                                              ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:109:12: error: the variable 'bvm_input' of type 'string' (aka 'basic_string<char>') is copy-constructed from a const reference but is only used as const reference; consider making it a const reference [performance-unnecessary-copy-initialization,-warnings-as-errors]
+  109 |     string bvm_input = input_args.at(0);
+      |            ^
+      |     const &
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:110:19: error: use 'contains' to check for membership [readability-container-contains,-warnings-as-errors]
+  110 |     if (bvm_input.find(".hex") == std::string::npos) throw std::invalid_argument("Input must be a hex file! (ends in .hex)");
+      |                   ^~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |         !         contains ".hex")
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:110:53: error: statement should be inside braces [hicpp-braces-around-statements,readability-braces-around-statements,-warnings-as-errors]
+  110 |     if (bvm_input.find(".hex") == std::string::npos) throw std::invalid_argument("Input must be a hex file! (ends in .hex)");
+      |                                                     ^                                                                        
+      |                                                      {
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:115:22: error: no header providing "std::pair" is directly included [misc-include-cleaner,-warnings-as-errors]
+   21 |     std::vector<std::pair<string, size_t>> bvm_input_buffer;
+      |                      ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:117:74: error: use emplace_back instead of push_back [hicpp-use-emplace,modernize-use-emplace,-warnings-as-errors]
+  117 |     while (std::getline(bvm_input_stream, curr_line)) { bvm_input_buffer.push_back(std::pair(curr_line, line_num++)); }
+      |                                                                          ^~~~~~~~~~~~~~~~~~~~                     ~
+      |                                                                          emplace_back(
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:117:89: error: no header providing "std::pair" is directly included [misc-include-cleaner,-warnings-as-errors]
+  117 |     while (std::getline(bvm_input_stream, curr_line)) { bvm_input_buffer.push_back(std::pair(curr_line, line_num++)); }
+      |                                                                                         ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:121:73: error: statement should be inside braces [hicpp-braces-around-statements,readability-braces-around-statements,-warnings-as-errors]
+  121 |         if (auto it = line.find_first_of("\\"); it != std::string::npos) line.erase(it);
+      |                                                                         ^               
+      |                                                                          {
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:126:108: error: no header providing "isspace" is directly included [misc-include-cleaner,-warnings-as-errors]
+    5 |                   [](std::pair<string, size_t> p) { return p.first.empty() || std::ranges::all_of(p.first, isspace); });
+      |                                                                                                            ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:130:12: error: the 'empty' method should be used to check for emptiness instead of 'size' [readability-container-size-empty,-warnings-as-errors]
+  130 |     assert(bvm_input_buffer.size() > 0);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |            !bvm_input_buffer.empty()
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/assert.h:72:25: note: expanded from macro 'assert'
+   72 |     (__builtin_expect(!(e), 0) ? __assert_rtn(__func__, __ASSERT_FILE_NAME, __LINE__, #e) : (void)0)
+      |                         ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__vector/vector.h:390:78: note: method 'vector'::empty() defined here
+  390 |   [[__nodiscard__]] _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI bool empty() const _NOEXCEPT {
+      |                                                                              ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:142:92: error: do not use pointer arithmetic [cppcoreguidelines-pro-bounds-pointer-arithmetic,-warnings-as-errors]
+  142 |         auto result = std::from_chars(instruction_string.data(), instruction_string.data() + instruction_string.size(),
+      |                                                                                            ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:144:38: error: statement should be inside braces [hicpp-braces-around-statements,readability-braces-around-statements,-warnings-as-errors]
+  144 |         if (result.ec != std::errc{})
+      |                                      ^
+      |                                       {
+  145 |             throw std::invalid_argument(
+  146 |                 std::format("Could not decode instruction {} at line {}", instruction_string, curr_line_num));
+      |                                                                                                               
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:150:9: error: variable 'instruction_tag_field' of type 'uint8_t' (aka 'unsigned char') can be declared 'const' [misc-const-correctness,-warnings-as-errors]
+  150 |         uint8_t instruction_tag_field = static_cast<uint8_t>(extract_bits(curr_instruction_bin, 40, 35));
+      |         ^
+      |                 const 
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:151:59: error: statement should be inside braces [hicpp-braces-around-statements,readability-braces-around-statements,-warnings-as-errors]
+  151 |         if (instruction_tag_field != INSTRUCTION_TYPE_TAG)
+      |                                                           ^
+      |                                                            {
+  152 |             throw std::invalid_argument(
+  153 |                 std::format("Not an intstruction type at line number: {}", bvm_input_buffer.at(PC).second));
+      |                                                                                                             
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:159:9: error: uninitialized record type: 'instruction_struct' [cppcoreguidelines-pro-type-member-init,hicpp-member-init,-warnings-as-errors]
+  159 |         InstructionInfo instruction_struct;
+      |         ^                                 
+      |                                           {}
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:160:126: error: statement should be inside braces [hicpp-braces-around-statements,readability-braces-around-statements,-warnings-as-errors]
+  160 |         if (auto it = LABEL_TO_INFOSTRUCT.find(static_cast<InstructionLabel>(opcode_field)); it == LABEL_TO_INFOSTRUCT.end())
+      |                                                                                                                              ^
+      |                                                                                                                               {
+  161 |             throw std::invalid_argument(
+  162 |                 std::format("Invalid opcode: {:B}, not found in lookup table at line {}", opcode_field, line_num));
+  163 |         else instruction_struct = it->second;
+      |         } 
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:163:9: error: do not use 'else' after 'throw' [readability-else-after-return,-warnings-as-errors]
+  163 |         else instruction_struct = it->second;
+      |         ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:163:13: error: statement should be inside braces [hicpp-braces-around-statements,readability-braces-around-statements,-warnings-as-errors]
+  163 |         else instruction_struct = it->second;
+      |             ^                                
+      |              {
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:179:21: error: switch has 12 consecutive identical branches [bugprone-branch-clone,-warnings-as-errors]
+  179 |                     case InstructionLabel::ADD:
+      |                     ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:228:22: note: last of these clones ends here
+  228 |                     }
+      |                      ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:245:36: error: implicit conversion loses integer precision: 'uint64_t' (aka 'unsigned long long') to 'const uint8_t' (aka 'const unsigned char') [clang-diagnostic-implicit-int-conversion,-warnings-as-errors]
+  245 |                 const uint8_t rd = extract_bits(curr_instruction_bin, 27, 23);
+      |                               ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:246:37: error: implicit conversion loses integer precision: 'uint64_t' (aka 'unsigned long long') to 'const uint8_t' (aka 'const unsigned char') [clang-diagnostic-implicit-int-conversion,-warnings-as-errors]
+  246 |                 const uint8_t rs1 = extract_bits(curr_instruction_bin, 22, 18);
+      |                               ~~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:251:93: error: statement should be inside braces [hicpp-braces-around-statements,readability-braces-around-statements,-warnings-as-errors]
+  251 |                 if (static_cast<uint8_t>(type) > HIGHEST_TYPE_VAL || type == DataType::Free)
+      |                                                                                             ^
+      |                                                                                              {
+  252 |                     throw std::invalid_argument(
+  253 |                         std::format("Not a valid type of operand register source [1] [{:}] at line [{:X}]",
+  254 |                                     DATATYPE_TO_STRING.find(type)->second, curr_line_num));
+      |                                                                                            
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:256:21: error: variable 'type_dest' of type 'uint8_t' (aka 'unsigned char') can be declared 'const' [misc-const-correctness,-warnings-as-errors]
+  256 |                 if (uint8_t type_dest = (extract_bits(GPR.at(rd), 40, 35)); type_dest > HIGHEST_TYPE_VAL)
+      |                     ^
+      |                             const 
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:256:42: error: implicit conversion loses integer precision: 'uint64_t' (aka 'unsigned long long') to 'uint8_t' (aka 'unsigned char') [clang-diagnostic-implicit-int-conversion,-warnings-as-errors]
+  256 |                 if (uint8_t type_dest = (extract_bits(GPR.at(rd), 40, 35)); type_dest > HIGHEST_TYPE_VAL)
+      |                             ~~~~~~~~~    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:256:106: error: statement should be inside braces [hicpp-braces-around-statements,readability-braces-around-statements,-warnings-as-errors]
+  256 |                 if (uint8_t type_dest = (extract_bits(GPR.at(rd), 40, 35)); type_dest > HIGHEST_TYPE_VAL)
+      |                                                                                                          ^
+      |                                                                                                           {
+  257 |                     throw std::invalid_argument(
+  258 |                         std::format("Not a valid type of register destimation, is inert at line {:X}", curr_line_num));
+      |                                                                                                                        
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:263:26: error: declaration shadows a local variable [clang-diagnostic-shadow,-warnings-as-errors]
+  263 |                 uint64_t result = 0;
+      |                          ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:142:14: note: previous declaration is here
+  142 |         auto result = std::from_chars(instruction_string.data(), instruction_string.data() + instruction_string.size(),
+      |              ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:281:29: error: variable 'rs1_val_signed' of type 'int64_t' (aka 'long long') can be declared 'const' [misc-const-correctness,-warnings-as-errors]
+  281 |                             int64_t rs1_val_signed = static_cast<int64_t>(rs1_val);
+      |                             ^
+      |                                     const 
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:282:29: error: variable 'imm_signed' of type 'int64_t' (aka 'long long') can be declared 'const' [misc-const-correctness,-warnings-as-errors]
+  282 |                             int64_t imm_signed = static_cast<int64_t>(imm);
+      |                             ^
+      |                                     const 
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:291:42: error: implicit conversion changes signedness: 'const int64_t' (aka 'const long long') to 'uint64_t' (aka 'unsigned long long') [clang-diagnostic-sign-conversion,-warnings-as-errors]
+  291 |                                 result = SMIN_35BIT;
+      |                                        ~ ^~~~~~~~~~
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:297:29: error: use `std::min` instead of `>` [readability-use-std-min-max,-warnings-as-errors]
+  297 |                             if (result > UMAX_35BIT) result = UMAX_35BIT;
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                             result = std::min(result, UMAX_35BIT);
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:297:53: error: statement should be inside braces [hicpp-braces-around-statements,readability-braces-around-statements,-warnings-as-errors]
+note: this fix will not be applied because it overlaps with another fix
+  297 |                             if (result > UMAX_35BIT) result = UMAX_35BIT;
+      |                                                     ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:316:21: error: switch has 3 consecutive identical branches [bugprone-branch-clone,-warnings-as-errors]
+  316 |                     case InstructionLabel::SLLI:  // THIS NEEDS TO BE CHANGED, FOR BROT WE ONLY NEED SHIFT LEFT AND SHIFT RIGHT.
+      |                     ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:327:22: note: last of these clones ends here
+  327 |                     }
+      |                      ^
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:339:30: error: redundant explicit casting to the same type 'uint64_t' (aka 'unsigned long long') as the sub-expression, remove this casting [readability-redundant-casting,-warnings-as-errors]
+  339 |                 GPR.at(rd) = static_cast<uint64_t>(result);
+      |                              ^~~~~~~~~~~~~~~~~~~~~~      ~
+/Users/mwd/Developer/BROT/BVM/src/main.cpp:263:26: note: source type originates from referencing this variable
+  263 |                 uint64_t result = 0;
+      |                 ~~~~~~~~ ^
+/Users/mwd/Developer/BROT/BVM/src/typedefs.hpp:103:29: error: use designated initializer list to initialize 'InstructionInfo' [modernize-use-designated-initializers,-warnings-as-errors]
+  103 |     {InstructionLabel::ADD, {InstructionLabel::ADD, InstructionGroup::R_TYPE, 3}},
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                              .label=                .group=                   .operand_count=
+/Users/mwd/Developer/BROT/BVM/src/typedefs.hpp:79:1: note: aggregate type is defined here
+   79 | struct InstructionInfo
+      | ^
+/Users/mwd/Developer/BROT/BVM/src/typedefs.hpp:104:29: error: use designated initializer list to initialize 'InstructionInfo' [modernize-use-designated-initializers,-warnings-as-errors]
+  104 |     {InstructionLabel::SUB, {InstructionLabel::SUB, InstructionGroup::R_TYPE, 3}},
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                              .label=                .group=                   .operand_count=
+/Users/mwd/Developer/BROT/BVM/src/typedefs.hpp:79:1: note: aggregate type is defined here
+   79 | struct InstructionInfo
+      | ^
+/Users/mwd/Developer/BROT/BVM/src/typedefs.hpp:105:29: error: use designated initializer list to initialize 'InstructionInfo' [modernize-use-designated-initializers,-warnings-as-errors]
+  105 |     {InstructionLabel::XOR, {InstructionLabel::XOR, InstructionGroup::R_TYPE, 3}},
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                              .label=                .group=                   .operand_count=
+/Users/mwd/Developer/BROT/BVM/src/typedefs.hpp:79:1: note: aggregate type is defined here
+   79 | struct InstructionInfo
+      | ^
+/Users/mwd/Developer/BROT/BVM/src/typedefs.hpp:106:28: error: use designated initializer list to initialize 'InstructionInfo' [modernize-use-designated-initializers,-warnings-as-errors]
+  106 |     {InstructionLabel::OR, {InstructionLabel::OR, InstructionGroup::R_TYPE, 3}},
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                             .label=               .group=                   .operand_count=
+/Users/mwd/Developer/BROT/BVM/src/typedefs.hpp:79:1: note: aggregate type is defined here
+   79 | struct InstructionInfo
+      | ^
+/Users/mwd/Developer/BROT/BVM/src/typedefs.hpp:107:29: error: use designated initializer list to initialize 'InstructionInfo' [modernize-use-designated-initializers,-warnings-as-errors]
+  107 |     {InstructionLabel::AND, {InstructionLabel::AND, InstructionGroup::R_TYPE, 3}},
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                              .label=                .group=                   .operand_count=
+/Users/mwd/Developer/BROT/BVM/src/typedefs.hpp:79:1: note: aggregate type is defined here
+   79 | struct InstructionInfo
+      | ^
+/Users/mwd/Developer/BROT/BVM/src/typedefs.hpp:108:29: error: use designated initializer list to initialize 'InstructionInfo' [modernize-use-designated-initializers,-warnings-as-errors]
+  108 |     {InstructionLabel::SLL, {InstructionLabel::SLL, InstructionGroup::R_TYPE, 3}},
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                              .label=                .group=                   .operand_count=
+/Users/mwd/Developer/BROT/BVM/src/typedefs.hpp:79:1: note: aggregate type is defined here
+   79 | struct InstructionInfo
+      | ^
+/Users/mwd/Developer/BROT/BVM/src/typedefs.hpp:109:29: error: use designated initializer list to initialize 'InstructionInfo' [modernize-use-designated-initializers,-warnings-as-errors]
+  109 |     {InstructionLabel::SRL, {InstructionLabel::SRL, InstructionGroup::R_TYPE, 3}},
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                              .label=                .group=                   .operand_count=
+/Users/mwd/Developer/BROT/BVM/src/typedefs.hpp:79:1: note: aggregate type is defined here
+   79 | struct InstructionInfo
+      | ^
+/Users/mwd/Developer/BROT/BVM/src/typedefs.hpp:110:29: error: use designated initializer list to initialize 'InstructionInfo' [modernize-use-designated-initializers,-warnings-as-errors]
+  110 |     {InstructionLabel::SRA, {InstructionLabel::SRA, InstructionGroup::R_TYPE, 3}},
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                              .label=                .group=                   .operand_count=
+/Users/mwd/Developer/BROT/BVM/src/typedefs.hpp:79:1: note: aggregate type is defined here
+   79 | struct InstructionInfo
+      | ^
+/Users/mwd/Developer/BROT/BVM/src/typedefs.hpp:111:29: error: use designated initializer list to initialize 'InstructionInfo' [modernize-use-designated-initializers,-warnings-as-errors]
+  111 |     {InstructionLabel::MUL, {InstructionLabel::MUL, InstructionGroup::R_TYPE, 3}},
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                              .label=                .group=                   .operand_count=
+/Users/mwd/Developer/BROT/BVM/src/typedefs.hpp:79:1: note: aggregate type is defined here
+   79 | struct InstructionInfo
+      | ^
+/Users/mwd/Developer/BROT/BVM/src/typedefs.hpp:112:30: error: use designated initializer list to initialize 'InstructionInfo' [modernize-use-designated-initializers,-warnings-as-errors]
+  112 |     {InstructionLabel::MULH, {InstructionLabel::MULH, InstructionGroup::R_TYPE, 3}},
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                               .label=                 .group=                   .operand_count=
+/Users/mwd/Developer/BROT/BVM/src/typedefs.hpp:79:1: note: aggregate type is defined here
+   79 | struct InstructionInfo
+      | ^
+/Users/mwd/Developer/BROT/BVM/src/typedefs.hpp:113:29: error: use designated initializer list to initialize 'InstructionInfo' [modernize-use-designated-initializers,-warnings-as-errors]
+  113 |     {InstructionLabel::MAC, {InstructionLabel::MAC, InstructionGroup::R_TYPE, 3}},
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                              .label=                .group=                   .operand_count=
+/Users/mwd/Developer/BROT/BVM/src/typedefs.hpp:79:1: note: aggregate type is defined here
+   79 | struct InstructionInfo
+      | ^
+/Users/mwd/Developer/BROT/BVM/src/typedefs.hpp:114:30: error: use designated initializer list to initialize 'InstructionInfo' [modernize-use-designated-initializers,-warnings-as-errors]
+  114 |     {InstructionLabel::ADDI, {InstructionLabel::ADDI, InstructionGroup::I_TYPE, 3}},
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                               .label=                 .group=                   .operand_count=
+/Users/mwd/Developer/BROT/BVM/src/typedefs.hpp:79:1: note: aggregate type is defined here
+   79 | struct InstructionInfo
+      | ^
+/Users/mwd/Developer/BROT/BVM/src/typedefs.hpp:115:30: error: use designated initializer list to initialize 'InstructionInfo' [modernize-use-designated-initializers,-warnings-as-errors]
+  115 |     {InstructionLabel::XORI, {InstructionLabel::XORI, InstructionGroup::I_TYPE, 3}},
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                               .label=                 .group=                   .operand_count=
+/Users/mwd/Developer/BROT/BVM/src/typedefs.hpp:79:1: note: aggregate type is defined here
+   79 | struct InstructionInfo
+      | ^
+/Users/mwd/Developer/BROT/BVM/src/typedefs.hpp:116:29: error: use designated initializer list to initialize 'InstructionInfo' [modernize-use-designated-initializers,-warnings-as-errors]
+  116 |     {InstructionLabel::ORI, {InstructionLabel::ORI, InstructionGroup::I_TYPE, 3}},
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                              .label=                .group=                   .operand_count=
+/Users/mwd/Developer/BROT/BVM/src/typedefs.hpp:79:1: note: aggregate type is defined here
+   79 | struct InstructionInfo
+      | ^
+/Users/mwd/Developer/BROT/BVM/src/typedefs.hpp:117:30: error: use designated initializer list to initialize 'InstructionInfo' [modernize-use-designated-initializers,-warnings-as-errors]
+  117 |     {InstructionLabel::ANDI, {InstructionLabel::ANDI, InstructionGroup::I_TYPE, 3}},
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                               .label=                 .group=                   .operand_count=
+/Users/mwd/Developer/BROT/BVM/src/typedefs.hpp:79:1: note: aggregate type is defined here
+   79 | struct InstructionInfo
+      | ^
+/Users/mwd/Developer/BROT/BVM/src/typedefs.hpp:118:30: error: use designated initializer list to initialize 'InstructionInfo' [modernize-use-designated-initializers,-warnings-as-errors]
+  118 |     {InstructionLabel::SLLI, {InstructionLabel::SLLI, InstructionGroup::I_TYPE, 3}},
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                               .label=                 .group=                   .operand_count=
+/Users/mwd/Developer/BROT/BVM/src/typedefs.hpp:79:1: note: aggregate type is defined here
+   79 | struct InstructionInfo
+      | ^
+/Users/mwd/Developer/BROT/BVM/src/typedefs.hpp:119:30: error: use designated initializer list to initialize 'InstructionInfo' [modernize-use-designated-initializers,-warnings-as-errors]
+  119 |     {InstructionLabel::SRLI, {InstructionLabel::SRLI, InstructionGroup::I_TYPE, 3}},
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                               .label=                 .group=                   .operand_count=
+/Users/mwd/Developer/BROT/BVM/src/typedefs.hpp:79:1: note: aggregate type is defined here
+   79 | struct InstructionInfo
+      | ^
+/Users/mwd/Developer/BROT/BVM/src/typedefs.hpp:120:30: error: use designated initializer list to initialize 'InstructionInfo' [modernize-use-designated-initializers,-warnings-as-errors]
+  120 |     {InstructionLabel::SRAI, {InstructionLabel::SRAI, InstructionGroup::I_TYPE, 3}},
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                               .label=                 .group=                   .operand_count=
+/Users/mwd/Developer/BROT/BVM/src/typedefs.hpp:79:1: note: aggregate type is defined here
+   79 | struct InstructionInfo
+      | ^
+/Users/mwd/Developer/BROT/BVM/src/typedefs.hpp:121:33: error: use designated initializer list to initialize 'InstructionInfo' [modernize-use-designated-initializers,-warnings-as-errors]
+  121 |     {InstructionLabel::CONVERT, {InstructionLabel::CONVERT, InstructionGroup::C_TYPE, 3}},
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                  .label=                    .group=                   .operand_count=
+/Users/mwd/Developer/BROT/BVM/src/typedefs.hpp:79:1: note: aggregate type is defined here
+   79 | struct InstructionInfo
+      | ^
+4198 warnings generated.
+Suppressed 4092 warnings (4092 in non-user code).
+Use -header-filter=.* or leave it as default to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+89 warnings treated as errors
+

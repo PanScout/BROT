@@ -1,0 +1,31 @@
+; ============================================================
+; FIBONACCI.brot — Fibonacci sequence (R/I/C types only)
+; Unrolled since we have no branch/loop instructions.
+; fib(0)..fib(21) in r1..r22
+; ============================================================
+
+; --- Bootstrap: seed values from r0 (hardwired U.Int(0)) ---
+ADDI r1, r0, 0:uint            ; r1  = fib(0)  = 0
+ADDI r2, r0, 1:uint            ; r2  = fib(1)  = 1
+
+; --- Unrolled Fibonacci: r(n) = r(n-1) + r(n-2) ---
+ADD r3, r1, r2                  ; r3  = fib(2)  = 1
+ADD r4, r2, r3                  ; r4  = fib(3)  = 2
+ADD r5, r3, r4                  ; r5  = fib(4)  = 3
+ADD r6, r4, r5                  ; r6  = fib(5)  = 5
+ADD r7, r5, r6                  ; r7  = fib(6)  = 8
+ADD r8, r6, r7                  ; r8  = fib(7)  = 13
+ADD r9, r7, r8                  ; r9  = fib(8)  = 21
+ADD r10, r8, r9                 ; r10 = fib(9)  = 34
+ADD r11, r9, r10                ; r11 = fib(10) = 55
+ADD r12, r10, r11               ; r12 = fib(11) = 89
+ADD r13, r11, r12               ; r13 = fib(12) = 144
+ADD r14, r12, r13               ; r14 = fib(13) = 233
+ADD r15, r13, r14               ; r15 = fib(14) = 377
+ADD r16, r14, r15               ; r16 = fib(15) = 610
+ADD r17, r15, r16               ; r17 = fib(16) = 987
+ADD r18, r16, r17               ; r18 = fib(17) = 1597
+ADD r19, r17, r18               ; r19 = fib(18) = 2584
+ADD r20, r18, r19               ; r20 = fib(19) = 4181
+ADD r21, r19, r20               ; r21 = fib(20) = 6765
+ADD r22, r20, r21               ; r22 = fib(21) = 10946

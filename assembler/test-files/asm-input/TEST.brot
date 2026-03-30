@@ -1,0 +1,13 @@
+; TEST.brot — Minimal BROT V0 smoke test (no labels)
+
+ADDI r1, r0, 0x10:uint       ; r1 = scratch base
+    ADDI r2, r0, 0x100:uint     ; r2 = data base
+ADDI   r3, r0, 0x108:uint      ; r3 = data end
+KSWI r1, r2, 0         
+KSWI r1, r3, 1          ; mem[0x11] = U.Int(0x108)
+MKPTRI p2, r1, 0, 0b11:uint ; p2 = Array(RW, 0x100, 0x108)
+MCONVI r1, 0, 0         ; mem[0x10] -> Free
+MCONVI  r1, 1, 0         ; mem[0x11] -> Free
+ADDI r4, r0, 42:uint         ; r4 = U.Int(42)
+SWI p2, r4, 0                   ; mem[0x100] = U.Int(42)
+LWI r5, p2, 0           ; r5 = mem[0x100] = U.Int(42)

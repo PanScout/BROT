@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/mwd/Developer/BROT/BVM/build",
+  "command": "/usr/bin/clang++ -g -std=gnu++23 -arch arm64 -Werror -Wall -Wextra -Wpedantic -Wsign-conversion -Wfloat-conversion -Wnarrowing -Wshadow -Wold-style-cast -Wcast-qual -Wconversion -fstandalone-debug -glldb -o CMakeFiles/bvm.dir/src/main.cpp.o -c /Users/mwd/Developer/BROT/BVM/src/main.cpp",
+  "file": "/Users/mwd/Developer/BROT/BVM/src/main.cpp",
+  "output": "/Users/mwd/Developer/BROT/BVM/build/CMakeFiles/bvm.dir/src/main.cpp.o"
+}
+]
