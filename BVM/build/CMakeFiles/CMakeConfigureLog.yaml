@@ -34,6 +34,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pkg/env/active/bin/"
       - "/opt/pmk/env/global/bin/"
       - "/Library/Apple/usr/bin/"
       - "/usr/local/MacGPG2/bin/"
@@ -42,6 +43,7 @@ events:
       - "/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.cargo/bin/"
       - "/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/Users/mwd/.vcpkg/uname"
       - "/opt/homebrew/bin/uname"
@@ -67,6 +69,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
         - "/opt/pmk/env/global/bin"
         - "/Library/Apple/usr/bin"
         - "/usr/local/MacGPG2/bin"
@@ -80,6 +83,7 @@ events:
         - "/Users/mwd/.local/bin"
         - "/Users/mwd/.cargo/bin"
         - "/opt/homebrew/opt/fzf/bin"
+        - "/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts"
   -
     kind: "find-v1"
     backtrace:
@@ -114,6 +118,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pkg/env/active/bin/"
       - "/opt/pmk/env/global/bin/"
       - "/Library/Apple/usr/bin/"
       - "/usr/local/MacGPG2/bin/"
@@ -122,6 +127,7 @@ events:
       - "/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.cargo/bin/"
       - "/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/Users/mwd/.vcpkg/cl"
       - "/opt/homebrew/bin/cl"
@@ -137,6 +143,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/cl"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/cl"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/cl"
+      - "/opt/pkg/env/active/bin/cl"
       - "/opt/pmk/env/global/bin/cl"
       - "/Library/Apple/usr/bin/cl"
       - "/usr/local/MacGPG2/bin/cl"
@@ -145,6 +152,7 @@ events:
       - "/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/cl"
       - "/Users/mwd/.cargo/bin/cl"
       - "/opt/homebrew/opt/fzf/bin/cl"
+      - "/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/cl"
     found: false
     search_context:
       ENV{PATH}:
@@ -162,6 +170,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
         - "/opt/pmk/env/global/bin"
         - "/Library/Apple/usr/bin"
         - "/usr/local/MacGPG2/bin"
@@ -175,13 +184,14 @@ events:
         - "/Users/mwd/.local/bin"
         - "/Users/mwd/.cargo/bin"
         - "/opt/homebrew/opt/fzf/bin"
+        - "/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts"
   -
     kind: "message-v1"
     backtrace:
       - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:212 (message)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      The system is: Darwin - 25.3.0 - arm64
+      The system is: Darwin - 25.4.0 - arm64
   -
     kind: "find-v1"
     backtrace:
@@ -224,6 +234,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pkg/env/active/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pmk/env/global/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Library/Apple/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/usr/local/MacGPG2/bin/"
@@ -232,6 +243,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.cargo/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/sbin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/"
@@ -253,6 +265,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pkg/env/active/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pmk/env/global/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Library/Apple/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/local/MacGPG2/bin/"
@@ -261,6 +274,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.cargo/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/sbin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/"
@@ -282,6 +296,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pkg/env/active/bin/"
       - "/opt/pmk/env/global/bin/"
       - "/Library/Apple/usr/bin/"
       - "/usr/local/MacGPG2/bin/"
@@ -290,6 +305,7 @@ events:
       - "/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.cargo/bin/"
       - "/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/bin/ninja-build"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/bin/ninja"
@@ -354,6 +370,9 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/ninja-build"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/ninja"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/samu"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pkg/env/active/bin/ninja-build"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pkg/env/active/bin/ninja"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pkg/env/active/bin/samu"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pmk/env/global/bin/ninja-build"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pmk/env/global/bin/ninja"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pmk/env/global/bin/samu"
@@ -378,6 +397,9 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/homebrew/opt/fzf/bin/ninja-build"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/homebrew/opt/fzf/bin/ninja"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/homebrew/opt/fzf/bin/samu"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/ninja-build"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/ninja"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/samu"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/bin/ninja-build"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/bin/ninja"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/bin/samu"
@@ -441,6 +463,9 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/ninja-build"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/ninja"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/samu"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pkg/env/active/bin/ninja-build"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pkg/env/active/bin/ninja"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pkg/env/active/bin/samu"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pmk/env/global/bin/ninja-build"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pmk/env/global/bin/ninja"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pmk/env/global/bin/samu"
@@ -465,6 +490,9 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/opt/fzf/bin/ninja-build"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/opt/fzf/bin/ninja"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/opt/fzf/bin/samu"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/ninja-build"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/ninja"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/samu"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/bin/ninja-build"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/bin/ninja"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/bin/samu"
@@ -512,6 +540,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
         - "/opt/pmk/env/global/bin"
         - "/Library/Apple/usr/bin"
         - "/usr/local/MacGPG2/bin"
@@ -525,6 +554,7 @@ events:
         - "/Users/mwd/.local/bin"
         - "/Users/mwd/.cargo/bin"
         - "/opt/homebrew/opt/fzf/bin"
+        - "/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts"
       CMAKE_FIND_ROOT_PATH: "/Users/mwd/.vcpkg/installed/arm64-osx/debug;/Users/mwd/.vcpkg/installed/arm64-osx"
   -
     kind: "find-v1"
@@ -567,6 +597,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pkg/env/active/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pmk/env/global/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Library/Apple/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/usr/local/MacGPG2/bin/"
@@ -575,6 +606,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.cargo/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/sbin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/"
@@ -596,6 +628,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pkg/env/active/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pmk/env/global/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Library/Apple/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/local/MacGPG2/bin/"
@@ -604,6 +637,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.cargo/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/sbin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/"
@@ -625,6 +659,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pkg/env/active/bin/"
       - "/opt/pmk/env/global/bin/"
       - "/Library/Apple/usr/bin/"
       - "/usr/local/MacGPG2/bin/"
@@ -633,6 +668,7 @@ events:
       - "/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.cargo/bin/"
       - "/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/bin/clang++"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/sbin/clang++"
@@ -655,6 +691,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/clang++"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/clang++"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/clang++"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pkg/env/active/bin/clang++"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pmk/env/global/bin/clang++"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Library/Apple/usr/bin/clang++"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/usr/local/MacGPG2/bin/clang++"
@@ -663,6 +700,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/clang++"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.cargo/bin/clang++"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/homebrew/opt/fzf/bin/clang++"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/clang++"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/bin/clang++"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/sbin/clang++"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/clang++"
@@ -684,6 +722,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/clang++"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/clang++"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/clang++"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pkg/env/active/bin/clang++"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pmk/env/global/bin/clang++"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Library/Apple/usr/bin/clang++"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/local/MacGPG2/bin/clang++"
@@ -692,6 +731,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/clang++"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.cargo/bin/clang++"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/opt/fzf/bin/clang++"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/clang++"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/bin/clang++"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/sbin/clang++"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/clang++"
@@ -728,6 +768,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
         - "/opt/pmk/env/global/bin"
         - "/Library/Apple/usr/bin"
         - "/usr/local/MacGPG2/bin"
@@ -741,6 +782,7 @@ events:
         - "/Users/mwd/.local/bin"
         - "/Users/mwd/.cargo/bin"
         - "/opt/homebrew/opt/fzf/bin"
+        - "/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts"
       CMAKE_FIND_ROOT_PATH: "/Users/mwd/.vcpkg/installed/arm64-osx/debug;/Users/mwd/.vcpkg/installed/arm64-osx"
   -
     kind: "find-v1"
@@ -786,6 +828,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
         - "/opt/pmk/env/global/bin"
         - "/Library/Apple/usr/bin"
         - "/usr/local/MacGPG2/bin"
@@ -799,6 +842,7 @@ events:
         - "/Users/mwd/.local/bin"
         - "/Users/mwd/.cargo/bin"
         - "/opt/homebrew/opt/fzf/bin"
+        - "/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts"
       CMAKE_FIND_ROOT_PATH: "/Users/mwd/.vcpkg/installed/arm64-osx/debug;/Users/mwd/.vcpkg/installed/arm64-osx"
   -
     kind: "message-v1"
@@ -820,7 +864,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
       The CXX compiler identification is AppleClang, found in:
-        /Users/mwd/Developer/BROT/BVM/build/CMakeFiles/4.3.0/CompilerIdCXX/a.out
+        /Users/mwd/Developer/BROT/BVM/build/CMakeFiles/4.3.1/CompilerIdCXX/a.out
       
   -
     kind: "message-v1"
@@ -833,7 +877,7 @@ events:
         # 1 "apple-sdk.cpp"
         # 1 "<built-in>" 1
         # 1 "<built-in>" 3
-        # 514 "<built-in>" 3
+        # 531 "<built-in>" 3
         # 1 "<command line>" 1
         # 1 "<built-in>" 2
         # 1 "apple-sdk.cpp" 2
@@ -897,6 +941,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pkg/env/active/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pmk/env/global/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Library/Apple/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/usr/local/MacGPG2/bin/"
@@ -905,6 +950,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.cargo/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vcpkg/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/bin/"
@@ -919,6 +965,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pkg/env/active/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pmk/env/global/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Library/Apple/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/local/MacGPG2/bin/"
@@ -927,6 +974,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.cargo/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/usr/bin/"
       - "/Users/mwd/.vcpkg/"
       - "/opt/homebrew/bin/"
@@ -941,6 +989,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pkg/env/active/bin/"
       - "/opt/pmk/env/global/bin/"
       - "/Library/Apple/usr/bin/"
       - "/usr/local/MacGPG2/bin/"
@@ -949,6 +998,7 @@ events:
       - "/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.cargo/bin/"
       - "/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/usr/bin/ar"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vcpkg/ar"
@@ -964,6 +1014,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/ar"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/ar"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/ar"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pkg/env/active/bin/ar"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pmk/env/global/bin/ar"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Library/Apple/usr/bin/ar"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/usr/local/MacGPG2/bin/ar"
@@ -972,6 +1023,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/ar"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.cargo/bin/ar"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/homebrew/opt/fzf/bin/ar"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/ar"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/bin/ar"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vcpkg/ar"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/bin/ar"
@@ -986,6 +1038,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/ar"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/ar"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/ar"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pkg/env/active/bin/ar"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pmk/env/global/bin/ar"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Library/Apple/usr/bin/ar"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/local/MacGPG2/bin/ar"
@@ -994,6 +1047,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/ar"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.cargo/bin/ar"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/opt/fzf/bin/ar"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/ar"
     found: "/usr/bin/ar"
     search_context:
       CMAKE_PROGRAM_PATH:
@@ -1016,6 +1070,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
         - "/opt/pmk/env/global/bin"
         - "/Library/Apple/usr/bin"
         - "/usr/local/MacGPG2/bin"
@@ -1029,6 +1084,7 @@ events:
         - "/Users/mwd/.local/bin"
         - "/Users/mwd/.cargo/bin"
         - "/opt/homebrew/opt/fzf/bin"
+        - "/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts"
       CMAKE_FIND_ROOT_PATH: "/Users/mwd/.vcpkg/installed/arm64-osx/debug;/Users/mwd/.vcpkg/installed/arm64-osx"
   -
     kind: "find-v1"
@@ -1064,6 +1120,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pkg/env/active/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pmk/env/global/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Library/Apple/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/usr/local/MacGPG2/bin/"
@@ -1072,6 +1129,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.cargo/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vcpkg/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/bin/"
@@ -1086,6 +1144,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pkg/env/active/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pmk/env/global/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Library/Apple/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/local/MacGPG2/bin/"
@@ -1094,6 +1153,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.cargo/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/usr/bin/"
       - "/Users/mwd/.vcpkg/"
       - "/opt/homebrew/bin/"
@@ -1108,6 +1168,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pkg/env/active/bin/"
       - "/opt/pmk/env/global/bin/"
       - "/Library/Apple/usr/bin/"
       - "/usr/local/MacGPG2/bin/"
@@ -1116,6 +1177,7 @@ events:
       - "/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.cargo/bin/"
       - "/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/usr/bin/ranlib"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vcpkg/ranlib"
@@ -1131,6 +1193,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/ranlib"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/ranlib"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/ranlib"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pkg/env/active/bin/ranlib"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pmk/env/global/bin/ranlib"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Library/Apple/usr/bin/ranlib"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/usr/local/MacGPG2/bin/ranlib"
@@ -1139,6 +1202,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/ranlib"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.cargo/bin/ranlib"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/homebrew/opt/fzf/bin/ranlib"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/ranlib"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/bin/ranlib"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vcpkg/ranlib"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/bin/ranlib"
@@ -1153,6 +1217,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/ranlib"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/ranlib"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/ranlib"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pkg/env/active/bin/ranlib"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pmk/env/global/bin/ranlib"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Library/Apple/usr/bin/ranlib"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/local/MacGPG2/bin/ranlib"
@@ -1161,6 +1226,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/ranlib"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.cargo/bin/ranlib"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/opt/fzf/bin/ranlib"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/ranlib"
     found: "/usr/bin/ranlib"
     search_context:
       CMAKE_PROGRAM_PATH:
@@ -1183,6 +1249,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
         - "/opt/pmk/env/global/bin"
         - "/Library/Apple/usr/bin"
         - "/usr/local/MacGPG2/bin"
@@ -1196,6 +1263,7 @@ events:
         - "/Users/mwd/.local/bin"
         - "/Users/mwd/.cargo/bin"
         - "/opt/homebrew/opt/fzf/bin"
+        - "/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts"
       CMAKE_FIND_ROOT_PATH: "/Users/mwd/.vcpkg/installed/arm64-osx/debug;/Users/mwd/.vcpkg/installed/arm64-osx"
   -
     kind: "find-v1"
@@ -1231,6 +1299,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pkg/env/active/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pmk/env/global/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Library/Apple/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/usr/local/MacGPG2/bin/"
@@ -1239,6 +1308,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.cargo/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vcpkg/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/bin/"
@@ -1253,6 +1323,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pkg/env/active/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pmk/env/global/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Library/Apple/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/local/MacGPG2/bin/"
@@ -1261,6 +1332,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.cargo/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/usr/bin/"
       - "/Users/mwd/.vcpkg/"
       - "/opt/homebrew/bin/"
@@ -1275,6 +1347,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pkg/env/active/bin/"
       - "/opt/pmk/env/global/bin/"
       - "/Library/Apple/usr/bin/"
       - "/usr/local/MacGPG2/bin/"
@@ -1283,6 +1356,7 @@ events:
       - "/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.cargo/bin/"
       - "/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/usr/bin/strip"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vcpkg/strip"
@@ -1298,6 +1372,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/strip"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/strip"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/strip"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pkg/env/active/bin/strip"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pmk/env/global/bin/strip"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Library/Apple/usr/bin/strip"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/usr/local/MacGPG2/bin/strip"
@@ -1306,6 +1381,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/strip"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.cargo/bin/strip"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/homebrew/opt/fzf/bin/strip"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/strip"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/bin/strip"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vcpkg/strip"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/bin/strip"
@@ -1320,6 +1396,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/strip"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/strip"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/strip"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pkg/env/active/bin/strip"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pmk/env/global/bin/strip"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Library/Apple/usr/bin/strip"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/local/MacGPG2/bin/strip"
@@ -1328,6 +1405,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/strip"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.cargo/bin/strip"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/opt/fzf/bin/strip"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/strip"
     found: "/usr/bin/strip"
     search_context:
       CMAKE_PROGRAM_PATH:
@@ -1350,6 +1428,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
         - "/opt/pmk/env/global/bin"
         - "/Library/Apple/usr/bin"
         - "/usr/local/MacGPG2/bin"
@@ -1363,6 +1442,7 @@ events:
         - "/Users/mwd/.local/bin"
         - "/Users/mwd/.cargo/bin"
         - "/opt/homebrew/opt/fzf/bin"
+        - "/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts"
       CMAKE_FIND_ROOT_PATH: "/Users/mwd/.vcpkg/installed/arm64-osx/debug;/Users/mwd/.vcpkg/installed/arm64-osx"
   -
     kind: "find-v1"
@@ -1398,6 +1478,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pkg/env/active/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pmk/env/global/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Library/Apple/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/usr/local/MacGPG2/bin/"
@@ -1406,6 +1487,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.cargo/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vcpkg/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/bin/"
@@ -1420,6 +1502,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pkg/env/active/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pmk/env/global/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Library/Apple/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/local/MacGPG2/bin/"
@@ -1428,6 +1511,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.cargo/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/usr/bin/"
       - "/Users/mwd/.vcpkg/"
       - "/opt/homebrew/bin/"
@@ -1442,6 +1526,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pkg/env/active/bin/"
       - "/opt/pmk/env/global/bin/"
       - "/Library/Apple/usr/bin/"
       - "/usr/local/MacGPG2/bin/"
@@ -1450,6 +1535,7 @@ events:
       - "/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.cargo/bin/"
       - "/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/usr/bin/ld"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vcpkg/ld"
@@ -1465,6 +1551,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/ld"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/ld"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/ld"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pkg/env/active/bin/ld"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pmk/env/global/bin/ld"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Library/Apple/usr/bin/ld"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/usr/local/MacGPG2/bin/ld"
@@ -1473,6 +1560,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/ld"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.cargo/bin/ld"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/homebrew/opt/fzf/bin/ld"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/ld"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/bin/ld"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vcpkg/ld"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/bin/ld"
@@ -1487,6 +1575,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/ld"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/ld"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/ld"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pkg/env/active/bin/ld"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pmk/env/global/bin/ld"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Library/Apple/usr/bin/ld"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/local/MacGPG2/bin/ld"
@@ -1495,6 +1584,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/ld"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.cargo/bin/ld"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/opt/fzf/bin/ld"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/ld"
     found: "/usr/bin/ld"
     search_context:
       CMAKE_PROGRAM_PATH:
@@ -1517,6 +1607,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
         - "/opt/pmk/env/global/bin"
         - "/Library/Apple/usr/bin"
         - "/usr/local/MacGPG2/bin"
@@ -1530,6 +1621,7 @@ events:
         - "/Users/mwd/.local/bin"
         - "/Users/mwd/.cargo/bin"
         - "/opt/homebrew/opt/fzf/bin"
+        - "/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts"
       CMAKE_FIND_ROOT_PATH: "/Users/mwd/.vcpkg/installed/arm64-osx/debug;/Users/mwd/.vcpkg/installed/arm64-osx"
   -
     kind: "find-v1"
@@ -1565,6 +1657,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pkg/env/active/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pmk/env/global/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Library/Apple/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/usr/local/MacGPG2/bin/"
@@ -1573,6 +1666,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.cargo/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vcpkg/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/bin/"
@@ -1587,6 +1681,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pkg/env/active/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pmk/env/global/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Library/Apple/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/local/MacGPG2/bin/"
@@ -1595,6 +1690,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.cargo/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/usr/bin/"
       - "/Users/mwd/.vcpkg/"
       - "/opt/homebrew/bin/"
@@ -1609,6 +1705,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pkg/env/active/bin/"
       - "/opt/pmk/env/global/bin/"
       - "/Library/Apple/usr/bin/"
       - "/usr/local/MacGPG2/bin/"
@@ -1617,6 +1714,7 @@ events:
       - "/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.cargo/bin/"
       - "/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/usr/bin/nm"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vcpkg/nm"
@@ -1632,6 +1730,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/nm"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/nm"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/nm"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pkg/env/active/bin/nm"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pmk/env/global/bin/nm"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Library/Apple/usr/bin/nm"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/usr/local/MacGPG2/bin/nm"
@@ -1640,6 +1739,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/nm"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.cargo/bin/nm"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/homebrew/opt/fzf/bin/nm"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/nm"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/bin/nm"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vcpkg/nm"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/bin/nm"
@@ -1654,6 +1754,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/nm"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/nm"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/nm"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pkg/env/active/bin/nm"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pmk/env/global/bin/nm"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Library/Apple/usr/bin/nm"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/local/MacGPG2/bin/nm"
@@ -1662,6 +1763,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/nm"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.cargo/bin/nm"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/opt/fzf/bin/nm"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/nm"
     found: "/usr/bin/nm"
     search_context:
       CMAKE_PROGRAM_PATH:
@@ -1684,6 +1786,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
         - "/opt/pmk/env/global/bin"
         - "/Library/Apple/usr/bin"
         - "/usr/local/MacGPG2/bin"
@@ -1697,6 +1800,7 @@ events:
         - "/Users/mwd/.local/bin"
         - "/Users/mwd/.cargo/bin"
         - "/opt/homebrew/opt/fzf/bin"
+        - "/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts"
       CMAKE_FIND_ROOT_PATH: "/Users/mwd/.vcpkg/installed/arm64-osx/debug;/Users/mwd/.vcpkg/installed/arm64-osx"
   -
     kind: "find-v1"
@@ -1732,6 +1836,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pkg/env/active/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pmk/env/global/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Library/Apple/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/usr/local/MacGPG2/bin/"
@@ -1740,6 +1845,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.cargo/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vcpkg/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/bin/"
@@ -1754,6 +1860,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pkg/env/active/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pmk/env/global/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Library/Apple/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/local/MacGPG2/bin/"
@@ -1762,6 +1869,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.cargo/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/usr/bin/"
       - "/Users/mwd/.vcpkg/"
       - "/opt/homebrew/bin/"
@@ -1776,6 +1884,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pkg/env/active/bin/"
       - "/opt/pmk/env/global/bin/"
       - "/Library/Apple/usr/bin/"
       - "/usr/local/MacGPG2/bin/"
@@ -1784,6 +1893,7 @@ events:
       - "/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.cargo/bin/"
       - "/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/usr/bin/objdump"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vcpkg/objdump"
@@ -1799,6 +1909,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/objdump"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/objdump"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/objdump"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pkg/env/active/bin/objdump"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pmk/env/global/bin/objdump"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Library/Apple/usr/bin/objdump"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/usr/local/MacGPG2/bin/objdump"
@@ -1807,6 +1918,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/objdump"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.cargo/bin/objdump"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/homebrew/opt/fzf/bin/objdump"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/objdump"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/bin/objdump"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vcpkg/objdump"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/bin/objdump"
@@ -1821,6 +1933,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/objdump"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/objdump"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/objdump"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pkg/env/active/bin/objdump"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pmk/env/global/bin/objdump"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Library/Apple/usr/bin/objdump"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/local/MacGPG2/bin/objdump"
@@ -1829,6 +1942,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/objdump"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.cargo/bin/objdump"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/opt/fzf/bin/objdump"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/objdump"
     found: "/usr/bin/objdump"
     search_context:
       CMAKE_PROGRAM_PATH:
@@ -1851,6 +1965,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
         - "/opt/pmk/env/global/bin"
         - "/Library/Apple/usr/bin"
         - "/usr/local/MacGPG2/bin"
@@ -1864,6 +1979,7 @@ events:
         - "/Users/mwd/.local/bin"
         - "/Users/mwd/.cargo/bin"
         - "/opt/homebrew/opt/fzf/bin"
+        - "/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts"
       CMAKE_FIND_ROOT_PATH: "/Users/mwd/.vcpkg/installed/arm64-osx/debug;/Users/mwd/.vcpkg/installed/arm64-osx"
   -
     kind: "find-v1"
@@ -1899,6 +2015,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pkg/env/active/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pmk/env/global/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Library/Apple/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/usr/local/MacGPG2/bin/"
@@ -1907,6 +2024,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.cargo/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vcpkg/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/bin/"
@@ -1921,6 +2039,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pkg/env/active/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pmk/env/global/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Library/Apple/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/local/MacGPG2/bin/"
@@ -1929,6 +2048,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.cargo/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/usr/bin/"
       - "/Users/mwd/.vcpkg/"
       - "/opt/homebrew/bin/"
@@ -1943,6 +2063,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pkg/env/active/bin/"
       - "/opt/pmk/env/global/bin/"
       - "/Library/Apple/usr/bin/"
       - "/usr/local/MacGPG2/bin/"
@@ -1951,6 +2072,7 @@ events:
       - "/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.cargo/bin/"
       - "/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/usr/bin/objcopy"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vcpkg/objcopy"
@@ -1966,6 +2088,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/objcopy"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/objcopy"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/objcopy"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pkg/env/active/bin/objcopy"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pmk/env/global/bin/objcopy"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Library/Apple/usr/bin/objcopy"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/usr/local/MacGPG2/bin/objcopy"
@@ -1974,6 +2097,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/objcopy"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.cargo/bin/objcopy"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/homebrew/opt/fzf/bin/objcopy"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/objcopy"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/bin/objcopy"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vcpkg/objcopy"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/bin/objcopy"
@@ -1988,6 +2112,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/objcopy"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/objcopy"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/objcopy"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pkg/env/active/bin/objcopy"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pmk/env/global/bin/objcopy"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Library/Apple/usr/bin/objcopy"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/local/MacGPG2/bin/objcopy"
@@ -1996,6 +2121,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/objcopy"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.cargo/bin/objcopy"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/opt/fzf/bin/objcopy"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/objcopy"
       - "/usr/bin/objcopy"
       - "/Users/mwd/.vcpkg/objcopy"
       - "/opt/homebrew/bin/objcopy"
@@ -2010,6 +2136,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/objcopy"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/objcopy"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/objcopy"
+      - "/opt/pkg/env/active/bin/objcopy"
       - "/opt/pmk/env/global/bin/objcopy"
       - "/Library/Apple/usr/bin/objcopy"
       - "/usr/local/MacGPG2/bin/objcopy"
@@ -2018,6 +2145,7 @@ events:
       - "/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/objcopy"
       - "/Users/mwd/.cargo/bin/objcopy"
       - "/opt/homebrew/opt/fzf/bin/objcopy"
+      - "/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/objcopy"
     found: false
     search_context:
       CMAKE_PROGRAM_PATH:
@@ -2040,6 +2168,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
         - "/opt/pmk/env/global/bin"
         - "/Library/Apple/usr/bin"
         - "/usr/local/MacGPG2/bin"
@@ -2053,6 +2182,7 @@ events:
         - "/Users/mwd/.local/bin"
         - "/Users/mwd/.cargo/bin"
         - "/opt/homebrew/opt/fzf/bin"
+        - "/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts"
       CMAKE_FIND_ROOT_PATH: "/Users/mwd/.vcpkg/installed/arm64-osx/debug;/Users/mwd/.vcpkg/installed/arm64-osx"
   -
     kind: "find-v1"
@@ -2088,6 +2218,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pkg/env/active/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pmk/env/global/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Library/Apple/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/usr/local/MacGPG2/bin/"
@@ -2096,6 +2227,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.cargo/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vcpkg/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/bin/"
@@ -2110,6 +2242,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pkg/env/active/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pmk/env/global/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Library/Apple/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/local/MacGPG2/bin/"
@@ -2118,6 +2251,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.cargo/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/usr/bin/"
       - "/Users/mwd/.vcpkg/"
       - "/opt/homebrew/bin/"
@@ -2132,6 +2266,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pkg/env/active/bin/"
       - "/opt/pmk/env/global/bin/"
       - "/Library/Apple/usr/bin/"
       - "/usr/local/MacGPG2/bin/"
@@ -2140,6 +2275,7 @@ events:
       - "/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.cargo/bin/"
       - "/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/usr/bin/readelf"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vcpkg/readelf"
@@ -2155,6 +2291,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/readelf"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/readelf"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/readelf"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pkg/env/active/bin/readelf"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pmk/env/global/bin/readelf"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Library/Apple/usr/bin/readelf"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/usr/local/MacGPG2/bin/readelf"
@@ -2163,6 +2300,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/readelf"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.cargo/bin/readelf"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/homebrew/opt/fzf/bin/readelf"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/readelf"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/bin/readelf"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vcpkg/readelf"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/bin/readelf"
@@ -2177,6 +2315,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/readelf"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/readelf"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/readelf"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pkg/env/active/bin/readelf"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pmk/env/global/bin/readelf"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Library/Apple/usr/bin/readelf"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/local/MacGPG2/bin/readelf"
@@ -2185,6 +2324,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/readelf"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.cargo/bin/readelf"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/opt/fzf/bin/readelf"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/readelf"
       - "/usr/bin/readelf"
       - "/Users/mwd/.vcpkg/readelf"
       - "/opt/homebrew/bin/readelf"
@@ -2199,6 +2339,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/readelf"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/readelf"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/readelf"
+      - "/opt/pkg/env/active/bin/readelf"
       - "/opt/pmk/env/global/bin/readelf"
       - "/Library/Apple/usr/bin/readelf"
       - "/usr/local/MacGPG2/bin/readelf"
@@ -2207,6 +2348,7 @@ events:
       - "/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/readelf"
       - "/Users/mwd/.cargo/bin/readelf"
       - "/opt/homebrew/opt/fzf/bin/readelf"
+      - "/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/readelf"
     found: false
     search_context:
       CMAKE_PROGRAM_PATH:
@@ -2229,6 +2371,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
         - "/opt/pmk/env/global/bin"
         - "/Library/Apple/usr/bin"
         - "/usr/local/MacGPG2/bin"
@@ -2242,6 +2385,7 @@ events:
         - "/Users/mwd/.local/bin"
         - "/Users/mwd/.cargo/bin"
         - "/opt/homebrew/opt/fzf/bin"
+        - "/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts"
       CMAKE_FIND_ROOT_PATH: "/Users/mwd/.vcpkg/installed/arm64-osx/debug;/Users/mwd/.vcpkg/installed/arm64-osx"
   -
     kind: "find-v1"
@@ -2277,6 +2421,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pkg/env/active/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pmk/env/global/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Library/Apple/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/usr/local/MacGPG2/bin/"
@@ -2285,6 +2430,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.cargo/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vcpkg/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/bin/"
@@ -2299,6 +2445,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pkg/env/active/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pmk/env/global/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Library/Apple/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/local/MacGPG2/bin/"
@@ -2307,6 +2454,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.cargo/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/usr/bin/"
       - "/Users/mwd/.vcpkg/"
       - "/opt/homebrew/bin/"
@@ -2321,6 +2469,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pkg/env/active/bin/"
       - "/opt/pmk/env/global/bin/"
       - "/Library/Apple/usr/bin/"
       - "/usr/local/MacGPG2/bin/"
@@ -2329,6 +2478,7 @@ events:
       - "/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.cargo/bin/"
       - "/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/usr/bin/dlltool"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vcpkg/dlltool"
@@ -2344,6 +2494,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/dlltool"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/dlltool"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/dlltool"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pkg/env/active/bin/dlltool"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pmk/env/global/bin/dlltool"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Library/Apple/usr/bin/dlltool"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/usr/local/MacGPG2/bin/dlltool"
@@ -2352,6 +2503,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/dlltool"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.cargo/bin/dlltool"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/homebrew/opt/fzf/bin/dlltool"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/dlltool"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/bin/dlltool"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vcpkg/dlltool"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/bin/dlltool"
@@ -2366,6 +2518,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/dlltool"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/dlltool"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/dlltool"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pkg/env/active/bin/dlltool"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pmk/env/global/bin/dlltool"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Library/Apple/usr/bin/dlltool"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/local/MacGPG2/bin/dlltool"
@@ -2374,6 +2527,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/dlltool"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.cargo/bin/dlltool"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/opt/fzf/bin/dlltool"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/dlltool"
       - "/usr/bin/dlltool"
       - "/Users/mwd/.vcpkg/dlltool"
       - "/opt/homebrew/bin/dlltool"
@@ -2388,6 +2542,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/dlltool"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/dlltool"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/dlltool"
+      - "/opt/pkg/env/active/bin/dlltool"
       - "/opt/pmk/env/global/bin/dlltool"
       - "/Library/Apple/usr/bin/dlltool"
       - "/usr/local/MacGPG2/bin/dlltool"
@@ -2396,6 +2551,7 @@ events:
       - "/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/dlltool"
       - "/Users/mwd/.cargo/bin/dlltool"
       - "/opt/homebrew/opt/fzf/bin/dlltool"
+      - "/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/dlltool"
     found: false
     search_context:
       CMAKE_PROGRAM_PATH:
@@ -2418,6 +2574,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
         - "/opt/pmk/env/global/bin"
         - "/Library/Apple/usr/bin"
         - "/usr/local/MacGPG2/bin"
@@ -2431,6 +2588,7 @@ events:
         - "/Users/mwd/.local/bin"
         - "/Users/mwd/.cargo/bin"
         - "/opt/homebrew/opt/fzf/bin"
+        - "/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts"
       CMAKE_FIND_ROOT_PATH: "/Users/mwd/.vcpkg/installed/arm64-osx/debug;/Users/mwd/.vcpkg/installed/arm64-osx"
   -
     kind: "find-v1"
@@ -2466,6 +2624,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pkg/env/active/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pmk/env/global/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Library/Apple/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/usr/local/MacGPG2/bin/"
@@ -2474,6 +2633,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.cargo/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vcpkg/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/bin/"
@@ -2488,6 +2648,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pkg/env/active/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pmk/env/global/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Library/Apple/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/local/MacGPG2/bin/"
@@ -2496,6 +2657,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.cargo/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/usr/bin/"
       - "/Users/mwd/.vcpkg/"
       - "/opt/homebrew/bin/"
@@ -2510,6 +2672,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pkg/env/active/bin/"
       - "/opt/pmk/env/global/bin/"
       - "/Library/Apple/usr/bin/"
       - "/usr/local/MacGPG2/bin/"
@@ -2518,6 +2681,7 @@ events:
       - "/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.cargo/bin/"
       - "/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/usr/bin/addr2line"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vcpkg/addr2line"
@@ -2533,6 +2697,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/addr2line"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/addr2line"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/addr2line"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pkg/env/active/bin/addr2line"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pmk/env/global/bin/addr2line"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Library/Apple/usr/bin/addr2line"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/usr/local/MacGPG2/bin/addr2line"
@@ -2541,6 +2706,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/addr2line"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.cargo/bin/addr2line"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/homebrew/opt/fzf/bin/addr2line"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/addr2line"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/bin/addr2line"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vcpkg/addr2line"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/bin/addr2line"
@@ -2555,6 +2721,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/addr2line"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/addr2line"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/addr2line"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pkg/env/active/bin/addr2line"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pmk/env/global/bin/addr2line"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Library/Apple/usr/bin/addr2line"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/local/MacGPG2/bin/addr2line"
@@ -2563,6 +2730,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/addr2line"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.cargo/bin/addr2line"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/opt/fzf/bin/addr2line"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/addr2line"
       - "/usr/bin/addr2line"
       - "/Users/mwd/.vcpkg/addr2line"
       - "/opt/homebrew/bin/addr2line"
@@ -2577,6 +2745,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/addr2line"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/addr2line"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/addr2line"
+      - "/opt/pkg/env/active/bin/addr2line"
       - "/opt/pmk/env/global/bin/addr2line"
       - "/Library/Apple/usr/bin/addr2line"
       - "/usr/local/MacGPG2/bin/addr2line"
@@ -2585,6 +2754,7 @@ events:
       - "/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/addr2line"
       - "/Users/mwd/.cargo/bin/addr2line"
       - "/opt/homebrew/opt/fzf/bin/addr2line"
+      - "/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/addr2line"
     found: false
     search_context:
       CMAKE_PROGRAM_PATH:
@@ -2607,6 +2777,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
         - "/opt/pmk/env/global/bin"
         - "/Library/Apple/usr/bin"
         - "/usr/local/MacGPG2/bin"
@@ -2620,6 +2791,7 @@ events:
         - "/Users/mwd/.local/bin"
         - "/Users/mwd/.cargo/bin"
         - "/opt/homebrew/opt/fzf/bin"
+        - "/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts"
       CMAKE_FIND_ROOT_PATH: "/Users/mwd/.vcpkg/installed/arm64-osx/debug;/Users/mwd/.vcpkg/installed/arm64-osx"
   -
     kind: "find-v1"
@@ -2655,6 +2827,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pkg/env/active/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pmk/env/global/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Library/Apple/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/usr/local/MacGPG2/bin/"
@@ -2663,6 +2836,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.cargo/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vcpkg/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/bin/"
@@ -2677,6 +2851,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pkg/env/active/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pmk/env/global/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Library/Apple/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/local/MacGPG2/bin/"
@@ -2685,6 +2860,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.cargo/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/usr/bin/"
       - "/Users/mwd/.vcpkg/"
       - "/opt/homebrew/bin/"
@@ -2699,6 +2875,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pkg/env/active/bin/"
       - "/opt/pmk/env/global/bin/"
       - "/Library/Apple/usr/bin/"
       - "/usr/local/MacGPG2/bin/"
@@ -2707,6 +2884,7 @@ events:
       - "/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.cargo/bin/"
       - "/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/usr/bin/tapi"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vcpkg/tapi"
@@ -2722,6 +2900,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/tapi"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/tapi"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/tapi"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pkg/env/active/bin/tapi"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pmk/env/global/bin/tapi"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Library/Apple/usr/bin/tapi"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/usr/local/MacGPG2/bin/tapi"
@@ -2730,6 +2909,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/tapi"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.cargo/bin/tapi"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/homebrew/opt/fzf/bin/tapi"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/tapi"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/bin/tapi"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vcpkg/tapi"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/bin/tapi"
@@ -2744,6 +2924,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/tapi"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/tapi"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/tapi"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pkg/env/active/bin/tapi"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pmk/env/global/bin/tapi"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Library/Apple/usr/bin/tapi"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/local/MacGPG2/bin/tapi"
@@ -2752,6 +2933,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/tapi"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.cargo/bin/tapi"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/opt/fzf/bin/tapi"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/tapi"
       - "/usr/bin/tapi"
       - "/Users/mwd/.vcpkg/tapi"
       - "/opt/homebrew/bin/tapi"
@@ -2766,6 +2948,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/tapi"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/tapi"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/tapi"
+      - "/opt/pkg/env/active/bin/tapi"
       - "/opt/pmk/env/global/bin/tapi"
       - "/Library/Apple/usr/bin/tapi"
       - "/usr/local/MacGPG2/bin/tapi"
@@ -2774,6 +2957,7 @@ events:
       - "/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/tapi"
       - "/Users/mwd/.cargo/bin/tapi"
       - "/opt/homebrew/opt/fzf/bin/tapi"
+      - "/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/tapi"
     found: false
     search_context:
       CMAKE_PROGRAM_PATH:
@@ -2796,6 +2980,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
         - "/opt/pmk/env/global/bin"
         - "/Library/Apple/usr/bin"
         - "/usr/local/MacGPG2/bin"
@@ -2809,6 +2994,7 @@ events:
         - "/Users/mwd/.local/bin"
         - "/Users/mwd/.cargo/bin"
         - "/opt/homebrew/opt/fzf/bin"
+        - "/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts"
       CMAKE_FIND_ROOT_PATH: "/Users/mwd/.vcpkg/installed/arm64-osx/debug;/Users/mwd/.vcpkg/installed/arm64-osx"
   -
     kind: "find-v1"
@@ -2851,6 +3037,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pkg/env/active/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pmk/env/global/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Library/Apple/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/usr/local/MacGPG2/bin/"
@@ -2859,6 +3046,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.cargo/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/sbin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/"
@@ -2880,6 +3068,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pkg/env/active/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pmk/env/global/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Library/Apple/usr/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/local/MacGPG2/bin/"
@@ -2888,6 +3077,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.cargo/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/bin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/sbin/"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/"
@@ -2909,6 +3099,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/pkg/env/active/bin/"
       - "/opt/pmk/env/global/bin/"
       - "/Library/Apple/usr/bin/"
       - "/usr/local/MacGPG2/bin/"
@@ -2917,6 +3108,7 @@ events:
       - "/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/Users/mwd/.cargo/bin/"
       - "/opt/homebrew/opt/fzf/bin/"
+      - "/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/bin/install_name_tool"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/sbin/install_name_tool"
@@ -2939,6 +3131,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/install_name_tool"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/install_name_tool"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/install_name_tool"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pkg/env/active/bin/install_name_tool"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/pmk/env/global/bin/install_name_tool"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Library/Apple/usr/bin/install_name_tool"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/usr/local/MacGPG2/bin/install_name_tool"
@@ -2947,6 +3140,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/install_name_tool"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.cargo/bin/install_name_tool"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/opt/homebrew/opt/fzf/bin/install_name_tool"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/install_name_tool"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/bin/install_name_tool"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/sbin/install_name_tool"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/install_name_tool"
@@ -2968,6 +3162,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/install_name_tool"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/install_name_tool"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/install_name_tool"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pkg/env/active/bin/install_name_tool"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/pmk/env/global/bin/install_name_tool"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Library/Apple/usr/bin/install_name_tool"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/usr/local/MacGPG2/bin/install_name_tool"
@@ -2976,6 +3171,7 @@ events:
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/install_name_tool"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.cargo/bin/install_name_tool"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/opt/homebrew/opt/fzf/bin/install_name_tool"
+      - "/Users/mwd/.vcpkg/installed/arm64-osx/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts/install_name_tool"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/bin/install_name_tool"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/sbin/install_name_tool"
       - "/Users/mwd/.vcpkg/installed/arm64-osx/debug/install_name_tool"
@@ -3012,6 +3208,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/pkg/env/active/bin"
         - "/opt/pmk/env/global/bin"
         - "/Library/Apple/usr/bin"
         - "/usr/local/MacGPG2/bin"
@@ -3025,6 +3222,7 @@ events:
         - "/Users/mwd/.local/bin"
         - "/Users/mwd/.cargo/bin"
         - "/opt/homebrew/opt/fzf/bin"
+        - "/Users/mwd/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/scripts/noConfigScripts"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_FIND_ROOT_PATH: "/Users/mwd/.vcpkg/installed/arm64-osx/debug;/Users/mwd/.vcpkg/installed/arm64-osx"
   -
@@ -3036,8 +3234,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/Users/mwd/Developer/BROT/BVM/build/CMakeFiles/CMakeScratch/TryCompile-CvceLe"
-      binary: "/Users/mwd/Developer/BROT/BVM/build/CMakeFiles/CMakeScratch/TryCompile-CvceLe"
+      source: "/Users/mwd/Developer/BROT/BVM/build/CMakeFiles/CMakeScratch/TryCompile-dlAxbt"
+      binary: "/Users/mwd/Developer/BROT/BVM/build/CMakeFiles/CMakeScratch/TryCompile-dlAxbt"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -3055,42 +3253,42 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/mwd/Developer/BROT/BVM/build/CMakeFiles/CMakeScratch/TryCompile-CvceLe'
+        Change Dir: '/Users/mwd/Developer/BROT/BVM/build/CMakeFiles/CMakeScratch/TryCompile-dlAxbt'
         
-        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_89528
-        [1/2] /usr/bin/clang++   -arch arm64   -v -Wl,-v -MD -MT CMakeFiles/cmTC_89528.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_89528.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_89528.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
-        Apple clang version 17.0.0 (clang-1700.6.4.2)
-        Target: arm64-apple-darwin25.3.0
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_16209
+        [1/2] /usr/bin/clang++   -arch arm64   -v -Wl,-v -MD -MT CMakeFiles/cmTC_16209.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_16209.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_16209.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Apple clang version 21.0.0 (clang-2100.0.123.102)
+        Target: arm64-apple-darwin25.4.0
         Thread model: posix
         InstalledDir: /Library/Developer/CommandLineTools/usr/bin
         clang++: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"
-         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=26.2 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +zcm -target-feature +zcz -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/mwd/Developer/BROT/BVM/build/CMakeFiles/CMakeScratch/TryCompile-CvceLe -target-linker-version 1230.1 -v -fcoverage-compilation-dir=/Users/mwd/Developer/BROT/BVM/build/CMakeFiles/CMakeScratch/TryCompile-CvceLe -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_89528.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_89528.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_89528.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
-        clang -cc1 version 17.0.0 (clang-1700.6.4.2) default target arm64-apple-darwin25.3.0
+         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -fno-sized-deallocation -target-sdk-version=26.4 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/mwd/Developer/BROT/BVM/build/CMakeFiles/CMakeScratch/TryCompile-dlAxbt -target-linker-version 1266.8 -v -fcoverage-compilation-dir=/Users/mwd/Developer/BROT/BVM/build/CMakeFiles/CMakeScratch/TryCompile-dlAxbt -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_16209.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_16209.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/21/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o CMakeFiles/cmTC_16209.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 21.0.0 (clang-2100.0.123.102) default target arm64-apple-darwin25.4.0
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
         #include "..." search starts here:
         #include <...> search starts here:
          /usr/local/include
          /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1
-         /Library/Developer/CommandLineTools/usr/lib/clang/17/include
+         /Library/Developer/CommandLineTools/usr/lib/clang/21/include
          /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
          /Library/Developer/CommandLineTools/usr/include
          /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
          /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks (framework directory)
         End of search list.
-        [2/2] : && /usr/bin/clang++ -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v -Wl,-v CMakeFiles/cmTC_89528.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_89528   && :
-        Apple clang version 17.0.0 (clang-1700.6.4.2)
-        Target: arm64-apple-darwin25.3.0
+        [2/2] : && /usr/bin/clang++ -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v -Wl,-v CMakeFiles/cmTC_16209.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_16209   && :
+        Apple clang version 21.0.0 (clang-2100.0.123.102)
+        Target: arm64-apple-darwin25.4.0
         Thread model: posix
         InstalledDir: /Library/Developer/CommandLineTools/usr/bin
-         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_89528 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_89528.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a
-        @(#)PROGRAM:ld PROJECT:ld-1230.1
-        BUILD 10:14:01 Jan  9 2026
+         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.4 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_16209 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_16209.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a
+        @(#)PROGRAM:ld PROJECT:ld-1266.8
+        BUILD 16:03:08 Mar  6 2026
         configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em armv8m.main armv8.1m.main
         will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
-        LTO support using: LLVM version 17.0.0 (static support for 29, runtime is 29)
-        TAPI support using: Apple TAPI version 17.0.0 (tapi-1700.3.8)
+        LTO support using: LLVM version 21.0.0 (static support for 30, runtime is 30)
+        TAPI support using: Apple TAPI version 21.0.0 (tapi-2100.0.2.6)
         Library search paths:
         	/usr/local/lib
         	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib
@@ -3120,16 +3318,16 @@ events:
         found start of implicit include info
           add: [/usr/local/include]
           add: [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1]
-          add: [/Library/Developer/CommandLineTools/usr/lib/clang/17/include]
+          add: [/Library/Developer/CommandLineTools/usr/lib/clang/21/include]
           add: [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include]
           add: [/Library/Developer/CommandLineTools/usr/include]
         end of search list found
         collapse include dir [/usr/local/include] ==> [/usr/local/include]
         collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1]
-        collapse include dir [/Library/Developer/CommandLineTools/usr/lib/clang/17/include] ==> [/Library/Developer/CommandLineTools/usr/lib/clang/17/include]
+        collapse include dir [/Library/Developer/CommandLineTools/usr/lib/clang/21/include] ==> [/Library/Developer/CommandLineTools/usr/lib/clang/21/include]
         collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include]
         collapse include dir [/Library/Developer/CommandLineTools/usr/include] ==> [/Library/Developer/CommandLineTools/usr/include]
-        implicit include dirs: [/usr/local/include;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1;/Library/Developer/CommandLineTools/usr/lib/clang/17/include;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include;/Library/Developer/CommandLineTools/usr/include]
+        implicit include dirs: [/usr/local/include;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1;/Library/Developer/CommandLineTools/usr/lib/clang/21/include;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include;/Library/Developer/CommandLineTools/usr/include]
       
       
   -
@@ -3142,36 +3340,36 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/Users/mwd/Developer/BROT/BVM/build/CMakeFiles/CMakeScratch/TryCompile-CvceLe']
+        ignore line: [Change Dir: '/Users/mwd/Developer/BROT/BVM/build/CMakeFiles/CMakeScratch/TryCompile-dlAxbt']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_89528]
-        ignore line: [[1/2] /usr/bin/clang++   -arch arm64   -v -Wl -v -MD -MT CMakeFiles/cmTC_89528.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_89528.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_89528.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
-        ignore line: [Apple clang version 17.0.0 (clang-1700.6.4.2)]
-        ignore line: [Target: arm64-apple-darwin25.3.0]
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_16209]
+        ignore line: [[1/2] /usr/bin/clang++   -arch arm64   -v -Wl -v -MD -MT CMakeFiles/cmTC_16209.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_16209.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_16209.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Apple clang version 21.0.0 (clang-2100.0.123.102)]
+        ignore line: [Target: arm64-apple-darwin25.4.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
         ignore line: [clang++: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
         ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"]
-        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=26.2 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +zcm -target-feature +zcz -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/mwd/Developer/BROT/BVM/build/CMakeFiles/CMakeScratch/TryCompile-CvceLe -target-linker-version 1230.1 -v -fcoverage-compilation-dir=/Users/mwd/Developer/BROT/BVM/build/CMakeFiles/CMakeScratch/TryCompile-CvceLe -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_89528.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_89528.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_89528.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
-        ignore line: [clang -cc1 version 17.0.0 (clang-1700.6.4.2) default target arm64-apple-darwin25.3.0]
+        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -fno-sized-deallocation -target-sdk-version=26.4 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/mwd/Developer/BROT/BVM/build/CMakeFiles/CMakeScratch/TryCompile-dlAxbt -target-linker-version 1266.8 -v -fcoverage-compilation-dir=/Users/mwd/Developer/BROT/BVM/build/CMakeFiles/CMakeScratch/TryCompile-dlAxbt -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_16209.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_16209.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/21/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o CMakeFiles/cmTC_16209.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 21.0.0 (clang-2100.0.123.102) default target arm64-apple-darwin25.4.0]
         ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"]
         ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
         ignore line: [ /usr/local/include]
         ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1]
-        ignore line: [ /Library/Developer/CommandLineTools/usr/lib/clang/17/include]
+        ignore line: [ /Library/Developer/CommandLineTools/usr/lib/clang/21/include]
         ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include]
         ignore line: [ /Library/Developer/CommandLineTools/usr/include]
         ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)]
         ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks (framework directory)]
         ignore line: [End of search list.]
-        ignore line: [[2/2] : && /usr/bin/clang++ -arch arm64 -Wl -search_paths_first -Wl -headerpad_max_install_names -v -Wl -v CMakeFiles/cmTC_89528.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_89528   && :]
-        ignore line: [Apple clang version 17.0.0 (clang-1700.6.4.2)]
-        ignore line: [Target: arm64-apple-darwin25.3.0]
+        ignore line: [[2/2] : && /usr/bin/clang++ -arch arm64 -Wl -search_paths_first -Wl -headerpad_max_install_names -v -Wl -v CMakeFiles/cmTC_16209.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_16209   && :]
+        ignore line: [Apple clang version 21.0.0 (clang-2100.0.123.102)]
+        ignore line: [Target: arm64-apple-darwin25.4.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
-        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_89528 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_89528.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a]
+        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.4 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_16209 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_16209.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a]
           arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
           arg [-demangle] ==> ignore
           arg [-lto_library] ==> ignore, skip following value
@@ -3182,26 +3380,26 @@ events:
           arg [-platform_version] ==> ignore
           arg [macos] ==> ignore
           arg [26.0.0] ==> ignore
-          arg [26.2] ==> ignore
+          arg [26.4] ==> ignore
           arg [-syslibroot] ==> ignore
           arg [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk] ==> ignore
           arg [-mllvm] ==> ignore
           arg [-enable-linkonceodr-outlining] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_89528] ==> ignore
+          arg [cmTC_16209] ==> ignore
           arg [-L/usr/local/lib] ==> dir [/usr/local/lib]
           arg [-search_paths_first] ==> ignore
           arg [-headerpad_max_install_names] ==> ignore
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_89528.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_16209.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lc++] ==> lib [c++]
           arg [-lSystem] ==> lib [System]
-          arg [/Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a]
+          arg [/Library/Developer/CommandLineTools/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a]
         linker tool for 'CXX': /Library/Developer/CommandLineTools/usr/bin/ld
         Library search paths: [;/usr/local/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/swift]
         Framework search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks]
         remove lib [System]
-        remove lib [/Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a]
+        remove lib [/Library/Developer/CommandLineTools/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a]
         collapse library dir [/usr/local/lib] ==> [/usr/local/lib]
         collapse library dir [/usr/local/lib] ==> [/usr/local/lib]
         collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib]
@@ -3222,10 +3420,10 @@ events:
       - "CMakeLists.txt:2 (project)"
     message: |
       Running the CXX compiler's linker: "/Library/Developer/CommandLineTools/usr/bin/ld" "-v"
-      @(#)PROGRAM:ld PROJECT:ld-1230.1
-      BUILD 10:14:01 Jan  9 2026
+      @(#)PROGRAM:ld PROJECT:ld-1266.8
+      BUILD 16:03:08 Mar  6 2026
       configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em armv8m.main armv8.1m.main
       will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
-      LTO support using: LLVM version 17.0.0 (static support for 29, runtime is 29)
-      TAPI support using: Apple TAPI version 17.0.0 (tapi-1700.3.8)
+      LTO support using: LLVM version 21.0.0 (static support for 30, runtime is 30)
+      TAPI support using: Apple TAPI version 21.0.0 (tapi-2100.0.2.6)
 ...

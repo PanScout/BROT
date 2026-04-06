@@ -15,7 +15,6 @@
 #include <stdexcept>
 #include <string>
 #include <system_error>
-#include <unordered_map>
 #include <utility>
 #include <vector>
 
@@ -26,74 +25,200 @@ using std::vector;
 // const uint64_t MASK_41 = (1ULL << 41) - 1;
 // const uint64_t UMAX_41 = (1ULL << 41) - 1;
 // const int64_t SMAX_41 = (1ULL << 40) - 1;
-const uint8_t INSTRUCTION_TYPE_TAG = 0x0C;
 // const uint64_t MASK_35 = (1ULL << 35) - 1;
-const uint64_t MASK_41 = (1ULL << 41) - 1;
-// const uint64_t MASK_IMM18 = (1ULL << 18) - 1;
-const uint64_t UMAX_35BIT = (1ULL << 35) - 1;
-const int64_t SMAX_35BIT = (1LL << 34) - 1;
-const int64_t SMIN_35BIT = -(1LL << 34);
-const uint8_t HIGHEST_TYPE_VAL = 0x0E;
+const uint64_t MASK_46 = (1ULL << 46) - 1;
+const uint64_t UMAX_40BIT = (1ULL << 40) - 1;
+const int64_t SMAX_40BIT = (1LL << 39) - 1;
+const int64_t SMIN_40BIT = -(1LL << 39);
 
-uint64_t extract_bits(const uint64_t &val, int high, int low)
+constexpr uint64_t extract_bits(const uint64_t &val, uint64_t high, uint64_t low)
 {
-    int width = high - low + 1;
-    uint64_t mask = (1ULL << width) - 1;
+    uint64_t width = high - low + 1ULL;
+    uint64_t mask = (1ULL << width) - 1ULL;
     uint64_t ret = (val >> low) & mask;
     return ret;
 }
 
-int64_t process_status_to_sat_or_clamp(int64_t result, ArithemeticFlag flag, uint8_t type_bin)
+constexpr TypeLabels extract_tag(const uint64_t &val)
 {
-    const string type = UINT_TO_TYPE_STRING.find(type_bin)->second;
-    if (type == "sint")
+    uint64_t width = TAG_FIELD_HIGH - TAG_FIELD_LOW + 1ULL;
+    uint64_t mask = (1ULL << width) - 1ULL;
+    auto ret = static_cast<TypeLabels>((val >> TAG_FIELD_LOW) & mask);
+    return ret;
+}
+
+constexpr uint64_t extract_data(const uint64_t &val)
+{
+    uint64_t width = DATA_FIELD_HIGH - DATA_FIELD_LOW + 1ULL;
+    uint64_t mask = (1ULL << width) - 1ULL;
+    uint64_t ret = (val >> DATA_FIELD_LOW) & mask;
+    return ret;
+}
+
+constexpr InstructionLabel extract_opcode(const uint64_t &val)
+{
+    uint64_t width = OPCODE_FIELD_HIGH - OPCODE_FIELD_LOW + 1ULL;
+    uint64_t mask = (1ULL << width) - 1ULL;
+    auto ret = static_cast<InstructionLabel>((val >> OPCODE_FIELD_LOW) & mask);
+    return ret;
+}
+
+constexpr uint64_t extract_imm(const uint64_t &val)
+{
+    uint64_t width = IMM_FIELD_HIGH - IMM_FIELD_LOW + 1ULL;
+    uint64_t mask = (1ULL << width) - 1ULL;
+    uint64_t ret = ((val >> IMM_FIELD_LOW) & mask);
+    return ret;
+}
+
+constexpr uint64_t convert(const TypeLabels SOURCE, const TypeLabels TARGET, const uint64_t &VAL, BVM &VM)
+{
+
+    auto retag = [&](const uint64_t VAL) -> uint64_t
     {
-        if (flag == ArithemeticFlag::OVERFLOW_F) { return SMAX_35BIT; }
-        else if (flag == ArithemeticFlag::UNDERFLOW_F) { return SMIN_35BIT; }
-        else { return result; }
+        const uint64_t RETAGGED_TYPE = static_cast<uint64_t>(static_cast<uint64_t>(std::to_underlying(TARGET)) << 40ULL);
+        const uint64_t VAL_DATA_RETAGGED = extract_data(VAL) | RETAGGED_TYPE;
+        return VAL_DATA_RETAGGED;
+    };
+    
+    auto scale = [&](const uint64_t VAL)
+    {
+        const uint64_t INT_BITS = [&]() -> uint64_t
+        {
+            switch (SOURCE)
+            {
+                case TypeLabels::Q32_8:
+                    return 32;
+                case TypeLabels::Q24_16:
+                    return 24;
+                case TypeLabels::Q8_32:
+                    return 8;
+                default:
+                    throw std::runtime_error("Not a valid source type for clamping?");
+            }
+        }();
+        const uint64_t FRAC_BITS = DATA_FIELD_SIZE - INT_BITS;
+        uint64_t ret;
+        switch (TARGET)
+        {
+
+            case TypeLabels::UINT:
+            {
+                ret = extract_data(VAL) >> FRAC_BITS;
+                ret |= std::to_underlying(TARGET) << 40ULL;
+                break;
+            }
+            case TypeLabels::UMOD:
+            {
+            }
+            case TypeLabels::SINT:
+            {
+            }
+            case TypeLabels::SMOD:
+            {
+            }
+            case TypeLabels::Q32_8:
+            {
+            }
+            case TypeLabels::Q24_16:
+            {
+            }
+            case TypeLabels::Q8_32:
+            {
+            }
+            default:
+                throw std::runtime_error("Not a valid target type for clamping?");
+        }
+
+        VM.STATUS_REGS[SATURATION_FLAG] = true;
+    };
+
+    auto clamp = []() {
+
+    };
+    auto trunc = []() {
+
+    };
+    auto numToBool = []() {
+
+    };
+    auto invalid = []() {
+
+    };
+
+    const ConvOp CONVERSION_FUNC = CONV_TABLE[std::to_underlying(SOURCE)][std::to_underlying(TARGET)];
+    uint64_t result;
+
+    switch (CONVERSION_FUNC)
+    {
+        case ConvOp::Id:
+        {
+            result = VAL;
+            break;
+        }
+        case ConvOp::Retag:
+        {
+            result = retag(VAL);
+            break;
+        }
+        case ConvOp::Zero:
+        {
+            result = 0;
+            break;
+        }
+        case ConvOp::Scale:
+        {
+            result = scale(VAL);
+            break;
+        }
+        case ConvOp::Clamp:
+        {
+            break;
+        }
+        case ConvOp::Trunc:
+        {
+            break;
+        }
+        case ConvOp::NonZero:
+        {
+            break;
+        }
+        case ConvOp::BoolTo:
+        {
+            break;
+        }
+        case ConvOp::Invalid:
+        {
+            break;
+        }
     }
 
     return result;
 }
 
-uint64_t process_status_to_sat_or_clamp(uint64_t result, ArithemeticFlag flag, uint8_t type_bin)
+void print_status(BVM &vm, std::ofstream &logfile)
 {
-    const string type = UINT_TO_TYPE_STRING.find(type_bin)->second;
-    if (type == "uint")
-    {
-        if (flag == ArithemeticFlag::OVERFLOW_F) { return UMAX_35BIT; }
-        else { return result; }
-    }
 
-    return result;
-}
-
-void print_status(BVM &vm)
-{
-    std::ofstream logfile("log.txt");
-    if (!logfile.is_open()) { throw std::invalid_argument("Could not open log file!"); }
-
-    std::println(logfile, "=============================");
-    std::println(logfile, "‖ {:1} {:^20} ‖", "PC: ", vm.PC);
-    std::println(logfile, "===================================================================================================");
+    std::println(logfile, "==========================================================");
+    std::println(logfile, "‖ {:1} {:>20} ‖ {:15} {:08b} ‖", "PC: ", vm.PC, "Status Register: ", vm.STATUS_REGS.to_ullong());
+    std::println(logfile, "=====================================================================================");
     for (size_t i = 0; i < vm.GPR.size(); i++)
     {
-        auto type = static_cast<DataType>(extract_bits(vm.GPR[i], 40, 35));
-        if (SIGNED_TYPES.contains(type))
+        TypeLabels type = extract_tag(vm.GPR[i]);
+        if (type >= TypeLabels::SINT && type <= TypeLabels::SPACKED)
         {
-            auto val = static_cast<int64_t>(extract_bits(vm.GPR[i], 34, 0));
-            std::println(logfile, "‖ {:1} {:2}: {:>8} {:064b} | {:>11} ‖", "GPR", i,
-                         UINT_TO_TYPE_STRING.find(static_cast<uint8_t>(type))->second, vm.GPR.at(i), val);
+            uint64_t val = extract_data(vm.GPR[i]);
+            std::println(logfile, "‖ {:1} {:2}: {:>8} {:046b} | {:>15} ‖", "GPR", i, TYPELABEL_TO_STRING.at(type), vm.GPR.at(i),
+                         val);
         }
         else
         {
-            uint64_t val = extract_bits(vm.GPR[i], 34, 0);
-            std::println(logfile, "‖ {:1} {:2}: {:>8} {:064b} | {:>11} ‖", "GPR", i,
-                         UINT_TO_TYPE_STRING.find(static_cast<uint8_t>(type))->second, vm.GPR.at(i), val);
+            uint64_t val = extract_data(vm.GPR[i]);
+            std::println(logfile, "‖ {:1} {:2}: {:>8} {:046b} | {:>15} ‖", "GPR", i, TYPELABEL_TO_STRING.at(type), vm.GPR.at(i),
+                         val);
         }
     }
-    std::println(logfile,
-                 "===================================================================================================\n");
+    std::println(logfile, "=====================================================================================\n");
 }
 
 vector<std::pair<string, size_t>> load_hex(const string &file_name)
@@ -130,164 +255,240 @@ InstructionInfo decode(std::pair<string, size_t> &instruction)
     if (from_chars_result.ec != std::errc{})
         throw std::invalid_argument(std::format("Could not decode instruction {} at line {}", instruction_string, curr_line_num));
 
-    uint64_t instruction_tag_field = (extract_bits(curr_instruction_bin, END_TAG_FIELD, START_TAG_FIELD));
-    if (instruction_tag_field != INSTRUCTION_TYPE_TAG)
+    const TypeLabels instruction_tag_field = extract_tag(curr_instruction_bin);
+    if (instruction_tag_field != TypeLabels::INSTRUCTION)
         throw std::invalid_argument(std::format("Not an intstruction type at line number: {}", curr_line_num));
 
-    uint64_t opcode_field = (extract_bits(curr_instruction_bin, END_OPCODE_FIELD, START_OPCODE_FIELD));
+    const InstructionLabel opcode_field = extract_opcode(curr_instruction_bin);
 
-    auto it = LABEL_TO_INFOSTRUCT.find(static_cast<InstructionLabel>(opcode_field));
+    auto it = LABEL_TO_INFOSTRUCT.find(opcode_field);
     if (it == LABEL_TO_INFOSTRUCT.end())
-        throw std::invalid_argument(
-            std::format("Invalid opcode: {:B}, not found in lookup table at line {}", opcode_field, curr_line_num));
+        throw std::invalid_argument(std::format("Invalid opcode: {:B}, not found in lookup table at line {}",
+                                                std::to_underlying(opcode_field), curr_line_num));
 
-    instruction_struct = it->second;
+    instruction_struct = LABEL_TO_INFOSTRUCT.at(opcode_field);
     instruction_struct.bin = curr_instruction_bin;
     instruction_struct.line_num = curr_line_num;
 
     return instruction_struct;
-    // NOLINT(readability-else-after-return)
 }
 
-void execute_r_type(BVM &vm, InstructionInfo instruction)
+void execute_r_type(BVM &vm, const InstructionInfo &instruction)
 {
+
+    constexpr uint64_t RD_HIGH = 31;
+    constexpr uint64_t RD_LOW = 27;
+    constexpr uint64_t RS1_LOW = 22;
+    constexpr uint64_t RS1_HIGH = 26;
+    constexpr uint64_t RS2_LOW = 17;
+    constexpr uint64_t RS2_HIGH = 21;
+
+    const uint64_t INSTRUCTION_BIN = instruction.bin;
+    const uint64_t RD = extract_bits(INSTRUCTION_BIN, RD_HIGH, RD_LOW);
+    const uint64_t RS1 = extract_bits(INSTRUCTION_BIN, RS1_HIGH, RS1_LOW);
+    const uint64_t RS2 = extract_bits(INSTRUCTION_BIN, RS2_HIGH, RS2_LOW);
+
+    if (RD > MAX_GPR_RANGE || RD == 0)
+        throw std::runtime_error(std::format("Destination Register out of Range or writing to Zero Register: {}", RD));
+    if (RS1 > MAX_GPR_RANGE) throw std::runtime_error(std::format("RS1 Register out of Range: {}", RS1));
+    if (RS2 > MAX_GPR_RANGE) throw std::runtime_error(std::format("RS2 Register out of Range: {}", RS2));
+
+    const uint64_t RS1_BIN = vm.GPR[RS1];
+    const uint64_t RS2_BIN = vm.GPR[RS2];
+
+    const uint64_t RS1_VAL = extract_data(RS1_BIN);
+    const uint64_t RS2_VAL = extract_data(RS2_BIN);
+
+    const TypeLabels RS1_TYPE = extract_tag(RS1_BIN);
+    const TypeLabels RS2_TYPE = extract_tag(RS2_BIN);
+
+    if (RS1_TYPE != RS2_TYPE)
+        throw std::runtime_error(std::format("Register types do not match!\nRS1 is: {}\nRS2 is: {}", RS2,
+                                             TYPELABEL_TO_STRING.at(RS1_TYPE), TYPELABEL_TO_STRING.at(RS2_TYPE)));
+
+    uint64_t result = 0;
     switch (instruction.label)
     {
 
         case InstructionLabel::ADD:
         {
+            result = RS1_VAL + RS2_VAL;
             break;
         }
         case InstructionLabel::SUB:
         {
+            result = RS1_VAL - RS2_VAL;
             break;
         }
         case InstructionLabel::XOR:
         {
+            result = RS1_VAL ^ RS2_VAL;
             break;
         }
         case InstructionLabel::OR:
         {
+            result = RS1_VAL | RS2_VAL;
             break;
         }
         case InstructionLabel::AND:
         {
+            result = RS1_VAL & RS2_VAL;
             break;
         }
         case InstructionLabel::SLL:
         {
+            result = RS1_VAL << RS2_VAL;
             break;
         }
-        case InstructionLabel::SRL:
+        case InstructionLabel::SHR:
         {
-            break;
-        }
-        case InstructionLabel::SRA:
-        {
+            // TODO
             break;
         }
         case InstructionLabel::MUL:
         {
+            result = RS1_VAL * RS2_VAL;
             break;
         }
         case InstructionLabel::MULH:
         {
+            // TODO Change this to DIV
             break;
         }
         case InstructionLabel::MAC:
         {
+            const uint64_t RD_BIN = vm.GPR[RD];
+            const TypeLabels RD_TYPE = extract_tag(RD_BIN);
+            if (RD_TYPE != RS1_TYPE)
+            {
+                throw std::runtime_error(std::format("Register types do not match for MAC!\nRS1 is: {}\nRS2 is: {}\nRD is: {}",
+                                                     RS2, TYPELABEL_TO_STRING.at(RS1_TYPE), TYPELABEL_TO_STRING.at(RS2_TYPE),
+                                                     TYPELABEL_TO_STRING.at(RD_TYPE)));
+            }
+            const uint64_t RD_VAL = extract_data(RD_BIN);
+            result = RD_VAL + (RS1_VAL * RS2_VAL);
             break;
         }
         default:
         {
-            // SHOULD NOT BE HERE EVER
+            std::unreachable();
             break;
         }
     }
+    if ((RS1_TYPE >= TypeLabels::UINT && RS1_TYPE <= TypeLabels::BOOL) && RS1_TYPE != TypeLabels::UMOD)
+    {
+        uint64_t result_min = std::min(result, UMAX_40BIT);
+        if (result_min != result || result == UMAX_40BIT) vm.STATUS_REGS[SATURATION_FLAG] = true;
+        result = result_min;
+    }
+    else if ((RS1_TYPE >= TypeLabels::SINT && RS1_TYPE <= TypeLabels::SPACKED) && RS1_TYPE != TypeLabels::SMOD)
+    {
+        int64_t RESULT_SIGNED = static_cast<int64_t>(result);
+        int64_t result_clamped = std::clamp(RESULT_SIGNED, SMIN_40BIT, SMAX_40BIT);
+        if (result_clamped != RESULT_SIGNED || result_clamped == SMIN_40BIT || result_clamped == SMAX_40BIT)
+            vm.STATUS_REGS[SATURATION_FLAG] = true;
+        result = static_cast<uint64_t>(result_clamped);
+    }
+    result |= (static_cast<uint64_t>(RS1_TYPE) << 40ULL);
+    result &= MASK_46;
+    vm.GPR.at(RD) = result;
+    vm.PC += 1;
 }
-void execute_i_type(BVM &vm, const InstructionInfo& instruction)
+void execute_i_type(BVM &vm, const InstructionInfo &instruction)
 {
     // Register Numbers
-    const uint64_t rd = extract_bits(instruction.bin, 27, 23);
-    const uint64_t rs1 = extract_bits(instruction.bin, 22, 18);
+    constexpr uint64_t RD_HIGH = 31;
+    constexpr uint64_t RD_LOW = 27;
+
+    constexpr uint64_t RS1_HIGH = 26;
+    constexpr uint64_t RS1_LOW = 22;
+
+    const uint64_t RD = extract_bits(instruction.bin, RD_HIGH, RD_LOW);
+    const uint64_t RS1 = extract_bits(instruction.bin, RS1_HIGH, RS1_LOW);
     // Immediate/Register Total Values (Including type)
-    const uint64_t rs1_bin = vm.GPR.at(rs1);
-    const auto type = static_cast<DataType>(extract_bits(rs1_bin, 40, 35));
+    const uint64_t RS1_BIN = vm.GPR.at(RS1);
+    const TypeLabels RS1_TYPE = extract_tag(RS1_BIN);
+    uint64_t rs1_val = extract_data(RS1_BIN);
+    uint64_t imm_val = extract_imm(instruction.bin);
 
-    if (static_cast<uint8_t>(type) > HIGHEST_TYPE_VAL || type == DataType::Free)
+    if (RS1_TYPE >= TypeLabels::INERT || RS1_TYPE == TypeLabels::FREE)
         throw std::invalid_argument(std::format("Not a valid type of operand register source [1] [{:}] at line [{:X}]",
-                                                DATATYPE_TO_STRING.find(type)->second, instruction.line_num));
+                                                TYPELABEL_TO_STRING.at(RS1_TYPE), instruction.line_num));
 
-    if (uint64_t type_dest = (extract_bits(vm.GPR.at(rd), END_TAG_FIELD, START_TAG_FIELD)); type_dest > HIGHEST_TYPE_VAL)
+    if (const TypeLabels type_dest = extract_tag(vm.GPR.at(RD)); type_dest >= TypeLabels::INERT)
         throw std::invalid_argument(
             std::format("Not a valid type of register destimation, is inert at line {:X}", instruction.line_num));
 
-    // Implicitly zero extended
-    uint64_t imm = extract_bits(instruction.bin, 17, 0);
-    uint64_t rs1_val = extract_bits(rs1_bin, 34, 0);
     uint64_t result = 0;
 
-    if (SIGNED_TYPES.contains(type))
+    if (RS1_TYPE >= TypeLabels::SINT && RS1_TYPE <= TypeLabels::SPACKED)
     {
+        constexpr uint64_t PADDING_BITS_RS1 = 24;
+        constexpr uint64_t PADDING_BITS_IMM = 24;
         // Sign Extend Instead
-        rs1_val = static_cast<uint64_t>(((static_cast<int64_t>(rs1_val) << 29ULL) >> 29ULL));
-        imm = static_cast<uint64_t>((static_cast<int64_t>(imm) << 46ULL) >> 46ULL);
+        rs1_val = static_cast<uint64_t>(((static_cast<int64_t>(rs1_val) << PADDING_BITS_RS1) >> PADDING_BITS_RS1));
+        imm_val = static_cast<uint64_t>((static_cast<int64_t>(imm_val) << PADDING_BITS_IMM) >> PADDING_BITS_IMM);
     }
 
     switch (instruction.label)
     {
         case InstructionLabel::ADDI:
         {
-            result = rs1_val + imm;
+            result = rs1_val + imm_val;
 
             // Saturation Check
-            if (SIGNED_TYPES.contains(type) && type != DataType::Smod)
+            if ((RS1_TYPE >= TypeLabels::SINT && RS1_TYPE <= TypeLabels::SPACKED) && RS1_TYPE != TypeLabels::SMOD)
             {
-                int64_t rs1_val_signed = static_cast<int64_t>(rs1_val);
-                int64_t imm_signed = static_cast<int64_t>(imm);
-                if ((rs1_val_signed > 0 && imm_signed > 0) && result < 0)
-                {
-                    // Two Postives become negative, overflow
-                    result = SMAX_35BIT;
-                }
-                else if (((rs1_val_signed < 0) && (imm_signed < 0)) && result > 0)
-                {
-                    // Two negatives become postive, underflow
-                    result = SMIN_35BIT;
-                }
+                auto result_clamped = static_cast<uint64_t>(std::clamp(static_cast<int64_t>(result), SMAX_40BIT, SMIN_40BIT));
+                if (result_clamped != result) vm.STATUS_REGS[SATURATION_FLAG] = true;
+                result = result_clamped;
+                // int64_t rs1_val_signed = static_cast<int64_t>(rs1_val);
+                // int64_t imm_signed = static_cast<int64_t>(rs1_val);
+                // if ((rs1_val_signed > 0 && imm_signed > 0) && result < 0)
+                //{
+                //  Two Postives become negative, overflow
+                //    result = SMAX_40BIT;
+                //}
+                // else if (((rs1_val_signed < 0) && (imm_signed < 0)) && result > 0)
+                //{
+                // Two negatives become postive, underflow
+                //  result = static_cast<uint64_t>(SMIN_40BIT);
+                //}
             }
-            else if (UNSIGNED_TYPES.contains(type) && type != DataType::Umod)
+            else if ((RS1_TYPE >= TypeLabels::UINT && RS1_TYPE <= TypeLabels::BOOL) && RS1_TYPE != TypeLabels::UMOD)
             {
                 // Overflow saturate
-                if (result > UMAX_35BIT) result = UMAX_35BIT; // NOLINT
+                if (result > UMAX_40BIT)
+                {
+                    result = UMAX_40BIT;
+                    vm.STATUS_REGS[SATURATION_FLAG] = true;
+                }
             }
             break;
         }
         case InstructionLabel::XORI:
         {
-            result = rs1_val ^ imm;
+            result = rs1_val ^ imm_val;
             break;
         }
         case InstructionLabel::ORI:
         {
-            result = rs1_val | imm;
+            result = rs1_val | imm_val;
             break;
         }
         case InstructionLabel::ANDI:
         {
-            result = rs1_val & imm;
+            result = rs1_val & imm_val;
             break;
         }
-        case InstructionLabel::SLLI: // THIS NEEDS TO BE CHANGED, FOR BROT WE ONLY NEED SHIFT LEFT AND SHIFT RIGHT.
+        case InstructionLabel::SLLI:
         {
+            result = rs1_val << imm_val;
             break;
         }
-        case InstructionLabel::SRLI:
+        case InstructionLabel::SHRI:
         {
-            break;
-        }
-        case InstructionLabel::SRAI:
-        {
+            // TODO
             break;
         }
         default:
@@ -299,14 +500,48 @@ void execute_i_type(BVM &vm, const InstructionInfo& instruction)
 
     // Destination Register inherits rd's type, trusts the programmer that the immediate was meaningfully encoded to
     // the corresponding type. Sworry I couldn't put a tag field in the immediate
-    result |= (static_cast<uint64_t>(type) << 35) & MASK_41; // This is inserting rs1's type into the result;
-    vm.GPR.at(rd) = static_cast<uint64_t>(result);
+    vm.PC += 1;
+    result |= (static_cast<uint64_t>(RS1_TYPE) << TAG_FIELD_LOW) & MASK_46; // This is inserting rs1's type into the result;
+    vm.GPR.at(RD) = static_cast<uint64_t>(result);                          // NOLINT
 }
 
-void execute_c_type(BVM &vm, const InstructionInfo instruction);
-void execute_j_type(BVM &vm, const InstructionInfo instruction);
+void execute_c_type(BVM &vm, const InstructionInfo &instruction)
+{
+    constexpr uint64_t TARGET_TYPE_HIGH = 21;
+    constexpr uint64_t TARGET_TYPE_LOW = 14;
 
-void execute(BVM &vm, const InstructionInfo& instruction)
+    constexpr uint64_t RD_HIGH = 31;
+    constexpr uint64_t RD_LOW = 27;
+
+    constexpr uint64_t RS1_HIGH = 26;
+    constexpr uint64_t RS1_LOW = 22;
+
+    const uint64_t RD = extract_bits(instruction.bin, RD_HIGH, RD_LOW);
+    const uint64_t RS1 = extract_bits(instruction.bin, RS1_HIGH, RS1_LOW);
+    const TypeLabels TARGET_TYPE = static_cast<TypeLabels>(extract_bits(instruction.bin, TARGET_TYPE_HIGH, TARGET_TYPE_LOW));
+
+    if (RD > MAX_GPR_RANGE || RD == 0)
+        throw std::runtime_error(std::format("Destination Register out of Range or writing to Zero Register: {}", RD));
+    if (RS1 > MAX_GPR_RANGE) throw std::runtime_error(std::format("RS1 Register out of Range: {}", RS1));
+    if (const TypeLabels type_dest = extract_tag(vm.GPR.at(RD)); type_dest >= TypeLabels::INERT)
+        throw std::invalid_argument(
+            std::format("Not a valid type of register destimation, is inert at line {:X}", instruction.line_num));
+
+    const uint64_t RS1_BIN = vm.GPR.at(RS1);
+    const TypeLabels RS1_TYPE = extract_tag(RS1_BIN);
+    const uint64_t RS1_VAL = extract_data(RS1_BIN);
+
+    ConversionPairing pair = {.source = RS1_TYPE, .target = TARGET_TYPE};
+
+    const uint64_t RS1_VAL_CONVERTED = convert(pair, RS1_VAL);
+}
+void execute_j_type(BVM &vm, const InstructionInfo &instruction)
+{
+    throw std::runtime_error(
+        std::format("NOT IMPLEMENTED YET, PC at {}, Instruction is {}", vm.PC, LABEL_TO_STRING.at(instruction.label)));
+}
+
+void execute(BVM &vm, const InstructionInfo &instruction)
 {
 
     switch (instruction.group)
@@ -331,14 +566,19 @@ void execute(BVM &vm, const InstructionInfo& instruction)
 
 void emulate(BVM &vm, std::vector<std::pair<string, size_t>> &instruction_buffer)
 {
+    std::ofstream logfile("log.txt");
+    if (!logfile.is_open()) { throw std::invalid_argument("Could not open log file!"); }
+
     while (vm.PC < instruction_buffer.size())
     {
-        print_status(vm);
+        print_status(vm, logfile);
         auto fetched_instruction = instruction_buffer.at(vm.PC);
         auto decoded_instruction = decode(fetched_instruction);
         execute(vm, decoded_instruction);
     }
-    print_status(vm);
+    assert(extract_data(vm.GPR[0]) == 0);
+    print_status(vm, logfile);
+    logfile.close();
 }
 
 int main(int argc, char *argv[])
@@ -346,10 +586,10 @@ int main(int argc, char *argv[])
     // vector<string> input_args(argv + 1, argv + argc);
 
     assert(argc >= 2);
+
     vector<std::pair<string, size_t>> instruction_buffer = load_hex(argv[1]);
     assert(instruction_buffer.size() > 0);
 
     BVM vm{};
     emulate(vm, instruction_buffer);
-    
 }
