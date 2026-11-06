@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "run basm",
+            "cargo": {
+                "args": ["build", "--bin=basm", "--package=basm", "--manifest-path=${workspaceFolder}/Cargo.toml"],
+                "filter": { "name": "basm", "kind": "bin" }
+            },
+            "args": ["-o output.txt", "test-inputs/ADD.basm"],
+            "cwd": "${workspaceFolder}",
+            "env": { "RUST_BACKTRACE": "short" }
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "debug unit tests",
+            "cargo": {
+                "args": ["test", "--no-run", "--bin=basm", "--package=basm", "--manifest-path=${workspaceFolder}/Cargo.toml"],
+                "filter": { "name": "basm", "kind": "bin" }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

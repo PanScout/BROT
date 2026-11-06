@@ -1,0 +1,4 @@
+{
+    // rustfmt.toml uses nightly-only options (brace_style, control_brace_style)
+    "rust-analyzer.rustfmt.extraArgs": ["+nightly"]
+}

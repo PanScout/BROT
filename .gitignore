@@ -1,0 +1,26 @@
+# Build output
+build/
+bin/
+*.o
+*.a
+*.so
+*.dylib
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+
+# Ninja
+.ninja_deps
+.ninja_log
+
+# Emulator runtime output
+log.txt
+
+# Tooling caches
+.cache/
+
+# macOS
+.DS_Store

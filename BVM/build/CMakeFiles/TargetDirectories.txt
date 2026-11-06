@@ -1,3 +1,0 @@
-/Users/mwd/Developer/BROT/BVM/build/CMakeFiles/bvm.dir
-/Users/mwd/Developer/BROT/BVM/build/CMakeFiles/edit_cache.dir
-/Users/mwd/Developer/BROT/BVM/build/CMakeFiles/rebuild_cache.dir

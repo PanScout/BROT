@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "run BVM",
+            "cargo": {
+                "args": ["build", "--bin=BVM", "--package=BVM", "--manifest-path=${workspaceFolder}/Cargo.toml"],
+                "filter": { "name": "BVM", "kind": "bin" }
+            },
+            "args": ["-i", "test-inputs/ADD.bvm" ],
+            "cwd": "${workspaceFolder}",
+            "env": { "RUST_BACKTRACE": "short" }
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "debug unit tests",
+            "cargo": {
+                "args": ["test", "--no-run", "--bin=BVM", "--package=BVM", "--manifest-path=${workspaceFolder}/Cargo.toml"],
+                "filter": { "name": "BVM", "kind": "bin" }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+/Users/mwd/Developer/BROT/BVM-rs/target/debug/BVM: /Users/mwd/Developer/BROT/BVM-rs/src/alu.rs /Users/mwd/Developer/BROT/BVM-rs/src/bvm.rs /Users/mwd/Developer/BROT/BVM-rs/src/main.rs /Users/mwd/Developer/BROT/isa-rs/src/types.rs

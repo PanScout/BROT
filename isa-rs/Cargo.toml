@@ -1,0 +1,12 @@
+[package]
+name = "isa"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+arbitrary-int = "2.2.0"
+num_enum = "0.7.6"
+strum = { version = "0.28.0", features = ["derive"] }
+
+[lib]
+path = "src/types.rs"

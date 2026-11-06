@@ -1,0 +1,8 @@
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Checking isa v0.1.0 (/Users/mwd/Developer/BROT/isa-rs)
+    Checking BVM v0.1.0 (/Users/mwd/Developer/BROT/BVM-rs)
+error: could not compile `BVM` (bin "BVM" test) due to 21 previous errors; 24 warnings emitted
+warning: build failed, waiting for other jobs to finish...
+error: could not compile `BVM` (bin "BVM") due to 21 previous errors; 24 warnings emitted

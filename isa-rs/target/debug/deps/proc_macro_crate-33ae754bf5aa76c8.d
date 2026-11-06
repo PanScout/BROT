@@ -1,0 +1,7 @@
+/Users/mwd/Developer/BROT/isa-rs/target/debug/deps/proc_macro_crate-33ae754bf5aa76c8.d: /Users/mwd/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro-crate-3.5.0/src/lib.rs
+
+/Users/mwd/Developer/BROT/isa-rs/target/debug/deps/libproc_macro_crate-33ae754bf5aa76c8.rlib: /Users/mwd/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro-crate-3.5.0/src/lib.rs
+
+/Users/mwd/Developer/BROT/isa-rs/target/debug/deps/libproc_macro_crate-33ae754bf5aa76c8.rmeta: /Users/mwd/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro-crate-3.5.0/src/lib.rs
+
+/Users/mwd/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro-crate-3.5.0/src/lib.rs:
