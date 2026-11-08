@@ -19,3 +19,6 @@ strip = true
 [lints.rust]
 dead_code = "allow"
 unused_variables = "allow"
+
+[dev-dependencies]
+test-case = "3.4.1"
