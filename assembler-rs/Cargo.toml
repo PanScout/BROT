@@ -21,4 +21,5 @@ dead_code = "allow"
 unused_variables = "allow"
 
 [dev-dependencies]
+proptest = "1.11.0"
 test-case = "3.4.1"
