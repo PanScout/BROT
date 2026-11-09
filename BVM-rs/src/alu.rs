@@ -8,7 +8,7 @@ use isa::*;
 
 pub fn add(a: &Word, b: &Word) -> Result<Word, String>
 {
-    use TypeLabel::{Q8_32, Q24_16, Q32_8, SINT, SMOD, SPACKED, UINT, UMOD, UPACKED};
+    use TypeLabel::{Q7_32, Q23_16, Q31_8, SINT, SMOD, SPACKED, UINT, UMOD, UPACKED};
 
     if a.tag != b.tag
     {
@@ -35,7 +35,7 @@ pub fn add(a: &Word, b: &Word) -> Result<Word, String>
             }
             Ok(y)
         }
-        SINT | Q32_8 | Q24_16 | Q8_32 =>
+        SINT | Q31_8 | Q23_16 | Q7_32 =>
         {
             let a_val: i40 = i40::new(a.data.value() as i64);
             let b_val: i40 = i40::new(b.data.value() as i64);
@@ -98,7 +98,7 @@ pub fn sub(a: &Word, b: &Word) -> Result<Word, String>
             }
             Ok(y)
         }
-        SINT | Q32_8 | Q16_24 | Q24_16 | Q8_32 =>
+        SINT | Q31_8 | Q15_24 | Q23_16 | Q7_32 =>
         {
             let a_val: i40 = i40::from_bits(a.data.value());
             let b_val: i40 = i40::from_bits(b.data.value());
@@ -213,7 +213,7 @@ pub fn shr(a: &Word, b: &Word) -> Result<Word, String>
     }
     else if SIGNED_ARIMETHIC_TYPES.contains(&a.tag)
     {
-        let a_data_signed = i40::new((a.data.value() as i64));
+        let a_data_signed = i40::new(a.data.value() as i64);
         Ok(Word { tag: a.tag, data: u40::new(a_data_signed.shr(shift_amount).value() as u64) })
     }
     else
@@ -237,10 +237,10 @@ pub fn mul(a: &Word, b: &Word) -> Result<Word, String>
         TypeLabel::BOOL => todo!(),
         TypeLabel::SINT => todo!(),
         TypeLabel::SMOD => todo!(),
-        TypeLabel::Q32_8 => todo!(),
-        TypeLabel::Q24_16 => todo!(),
-        TypeLabel::Q16_24 => todo!(),
-        TypeLabel::Q8_32 => todo!(),
+        TypeLabel::Q31_8 => todo!(),
+        TypeLabel::Q23_16 => todo!(),
+        TypeLabel::Q15_24 => todo!(),
+        TypeLabel::Q7_32 => todo!(),
         TypeLabel::SPACKED => todo!(),
         TypeLabel::INSTRUCTION => todo!(),
         TypeLabel::PTRF => todo!(),
@@ -264,10 +264,10 @@ pub fn mulh(a: &Word, b: &Word) -> Result<Word, String>
         TypeLabel::BOOL => todo!(),
         TypeLabel::SINT => todo!(),
         TypeLabel::SMOD => todo!(),
-        TypeLabel::Q32_8 => todo!(),
-        TypeLabel::Q24_16 => todo!(),
-        TypeLabel::Q16_24 => todo!(),
-        TypeLabel::Q8_32 => todo!(),
+        TypeLabel::Q31_8 => todo!(),
+        TypeLabel::Q23_16 => todo!(),
+        TypeLabel::Q15_24 => todo!(),
+        TypeLabel::Q7_32 => todo!(),
         TypeLabel::SPACKED => todo!(),
         TypeLabel::INSTRUCTION => todo!(),
         TypeLabel::PTRF => todo!(),
@@ -291,10 +291,10 @@ pub fn mac(a: &Word, b: &Word) -> Result<Word, String>
         TypeLabel::BOOL => todo!(),
         TypeLabel::SINT => todo!(),
         TypeLabel::SMOD => todo!(),
-        TypeLabel::Q32_8 => todo!(),
-        TypeLabel::Q24_16 => todo!(),
-        TypeLabel::Q16_24 => todo!(),
-        TypeLabel::Q8_32 => todo!(),
+        TypeLabel::Q31_8 => todo!(),
+        TypeLabel::Q23_16 => todo!(),
+        TypeLabel::Q15_24 => todo!(),
+        TypeLabel::Q7_32 => todo!(),
         TypeLabel::SPACKED => todo!(),
         TypeLabel::INSTRUCTION => todo!(),
         TypeLabel::PTRF => todo!(),

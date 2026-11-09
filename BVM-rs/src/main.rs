@@ -88,6 +88,8 @@ fn perform_arimethic(label: InstructionLabel, a: &Word, b: &Word) -> Result<Word
         CONVERT => todo!(),
         SLT => todo!(),
         SLTI => todo!(),
+        LI => todo!(),
+        LUI => todo!(),
     };
     Ok(result)
 }

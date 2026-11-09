@@ -1,8 +1,9 @@
-
 use num_enum::{IntoPrimitive, TryFromPrimitive};
-use strum::{EnumCount, EnumString, IntoStaticStr};
+use strum::{EnumCount, EnumIter, EnumString, IntoStaticStr};
 
 use arbitrary_int::{i40, u18, u23, u40, u46};
+
+pub use strum::IntoEnumIterator;
 
 pub const MAX_GPR_VAL: usize = 31;
 
@@ -33,7 +34,7 @@ pub const LONG_IMM_START: u64 = 0;
 pub const LONG_IMM_VAL_END: u64 = 22;
 pub const LONG_IMM_TAG_START: u64 = 23;
 pub const LONG_IMM_END: u64 = 26;
-pub const LONG_IMM_MASK23: u64 = (1u64 << 23) - 1 ;
+pub const LONG_IMM_MASK23: u64 = (1u64 << 23) - 1;
 pub const LONG_UIMM_MAX: u64 = (1u64 << 23) - 1;
 pub const LONG_SIMM_MAX: i64 = (1i64 << 22) - 1;
 pub const LONG_SIMM_MIN: i64 = -(1i64 << 22);
@@ -82,19 +83,26 @@ pub const UNSIGNED_ARIMETHIC_TYPES: [TypeLabel; 3] = {
     [UINT, UMOD, UPACKED]
 };
 
-#[derive(Debug, PartialEq, Eq, Clone)]
+#[derive(Debug, PartialEq, Eq, Clone, Copy)]
+pub enum RegisterType
+{
+    Pointer,
+    GPR,
+}
+
+#[derive(Debug, PartialEq, Eq, Clone, Copy)]
 pub struct RegisterIndexArg
 {
     pub index: u8,
-    pub is_pointer_reg: bool,
-    pub is_valid: bool,
+    pub kind: RegisterType,
 }
 #[derive(Debug, PartialEq, Eq, Clone, Copy)]
 
 pub enum ImmVal
 {
-    Long(u23),
     Short(u18),
+    Long(u23),
+    Full(u40),
 }
 #[derive(Debug, PartialEq, Eq, Clone, Copy)]
 pub struct ImmArg
@@ -102,28 +110,6 @@ pub struct ImmArg
     pub imm_val: ImmVal,
     pub datatype: ImmTypeLabel,
     pub valid: bool,
-}
-
-impl ImmArg
-{
-    pub fn to_u23(self) -> u23
-    {
-        match self.imm_val
-        {
-            ImmVal::Long(uint) =>
-            {
-                let tag_int: u64 = self.datatype.into();
-                let ret = (tag_int << LONG_IMM_TAG_START) | (uint.value() as u64);
-                u23::new(u32::try_from(ret).unwrap())
-            }
-            ImmVal::Short(uint) =>
-            {
-                let tag_int: u64 = self.datatype.into();
-                let ret = (tag_int << IMM_TAG_START) | (uint.value() as u64);
-                u23::new(u32::try_from(ret).unwrap())
-            }
-        }
-    }
 }
 
 #[repr(u64)]
@@ -171,6 +157,7 @@ pub enum TypeLabel
     SMOD,
     Q31_8,
     Q23_16,
+    Q19_20,
     Q15_24,
     Q7_32,
     SPACKED,
@@ -182,7 +169,7 @@ pub enum TypeLabel
 }
 
 #[repr(u64)]
-#[derive(Debug, PartialEq, Eq, Clone, Copy, IntoPrimitive, TryFromPrimitive, EnumString, IntoStaticStr)]
+#[derive(Debug, PartialEq, Eq, Clone, Copy, IntoPrimitive, TryFromPrimitive, EnumString, IntoStaticStr, EnumIter)]
 pub enum ImmTypeLabel
 {
     UINT = 0,
@@ -193,9 +180,10 @@ pub enum ImmTypeLabel
     SMOD = 5,
     Q31_8 = 6,
     Q23_16 = 7,
-    Q15_24 = 8,
-    Q7_32 = 9,
-    SPACKED = 10,
+    Q19_20 = 8,
+    Q15_24 = 9,
+    Q7_32 = 10,
+    SPACKED = 11,
 }
 
 impl ImmTypeLabel
@@ -215,6 +203,7 @@ impl ImmTypeLabel
             TypeLabel::Q15_24 => Ok(ImmTypeLabel::Q15_24),
             TypeLabel::Q7_32 => Ok(ImmTypeLabel::Q7_32),
             TypeLabel::SPACKED => Ok(ImmTypeLabel::SPACKED),
+            TypeLabel::Q19_20 => Ok(ImmTypeLabel::Q19_20),
             TypeLabel::FREE | TypeLabel::INSTRUCTION | TypeLabel::PTRB | TypeLabel::PTRF | TypeLabel::INERT =>
             {
                 Err(format!("{label:?} is not a valid immediate type"))
@@ -237,6 +226,7 @@ impl ImmTypeLabel
             ImmTypeLabel::Q15_24 => Ok(TypeLabel::Q15_24),
             ImmTypeLabel::Q7_32 => Ok(TypeLabel::Q7_32),
             ImmTypeLabel::SPACKED => Ok(TypeLabel::SPACKED),
+            ImmTypeLabel::Q19_20 =>  Ok(TypeLabel::Q19_20)
         }
     }
 }
@@ -251,12 +241,16 @@ pub enum InstructionLabel
     XOR,
     OR,
     AND,
+    NOT,
     SHL,
     SHR,
     SLT,
     MUL,
     MULH,
     MAC,
+    MV,
+    EXTB,
+    INSRTB,
 
     // I-type
     ADDI,
@@ -267,29 +261,29 @@ pub enum InstructionLabel
     SHLI,
     SLTI,
     LI,
+    LUI,
+    INSRTBI,
 
     // C-type
     CONVERT = 29,
 }
 
-#[derive(Clone, PartialEq, Eq)]
+#[derive(Clone, PartialEq, Eq, Debug)]
 pub struct InstructionInfo
 {
     pub label: InstructionLabel,
     pub group: InstructionGroup,
-    pub register_args: [RegisterIndexArg; 3],
+    pub register_args: Vec<RegisterIndexArg>,
     pub imm_arg: ImmArg,
     pub valid_operand_counts: &'static [usize],
-    pub line_num: usize,
 }
 
 impl InstructionInfo
 {
-    pub fn label_to_info(label: InstructionLabel, curr_line: usize) -> Result<InstructionInfo, String>
+    pub fn label_to_info(label: InstructionLabel) -> Result<InstructionInfo, String>
     {
         use InstructionGroup::{CTYPE, ITYPE, RTYPE};
         use InstructionLabel::*;
-        let line_num = curr_line;
 
         let (group, valid_operand_counts): (InstructionGroup, &'static [usize]) = match label
         {
@@ -301,52 +295,114 @@ impl InstructionInfo
             AND => (RTYPE, &[3]),
             SHL => (RTYPE, &[3]),
             SLT => (RTYPE, &[3]),
+            NOT => (RTYPE, &[2]),
             SHR => (RTYPE, &[3]),
             MUL => (RTYPE, &[3]),
             MULH => (RTYPE, &[3]),
             MAC => (RTYPE, &[3]),
+            MV => (RTYPE, &[2]),
+            EXTB => (RTYPE, &[3]),
+            INSRTB => (RTYPE, &[3]),
 
             // I-type
-            ADDI => (ITYPE, &[3, 8]),
-            XORI => (ITYPE, &[3, 8]),
-            ORI => (ITYPE, &[3, 8]),
-            SHRI => todo!(),
-            SLTI => todo!(),
-            ANDI => (ITYPE, &[3, 8]),
-            SHLI => (ITYPE, &[3, 8]),
-            LI => (ITYPE, &[2, 7]),
+            ADDI => (ITYPE, &[3]),
+            XORI => (ITYPE, &[3]),
+            ORI => (ITYPE, &[3]),
+            SHRI => (ITYPE, &[3]),
+            SLTI => (ITYPE, &[3]), 
+            ANDI => (ITYPE, &[3]),
+            SHLI => (ITYPE, &[3]),
+            LI => (ITYPE, &[2]),
+            LUI => (ITYPE, &[2]),
+            INSRTBI => (ITYPE, (&[3])),
 
             // C-type
             CONVERT => (CTYPE, &[2]),
         };
 
-        let default_register = [
-            RegisterIndexArg { index: 127, is_pointer_reg: true, is_valid: false },
-            RegisterIndexArg { index: 127, is_pointer_reg: true, is_valid: false },
-            RegisterIndexArg { index: 127, is_pointer_reg: true, is_valid: false },
-        ];
-
-        let default_imm: ImmArg = ImmArg { imm_val: ImmVal::Short(u18::new(0)), datatype: ImmTypeLabel::BOOL, valid: false };
+        let default_imm: ImmArg =
+            ImmArg { imm_val: ImmVal::Short(u18::new(0)), datatype: ImmTypeLabel::BOOL, valid: false };
 
         Ok(InstructionInfo {
             label,
             group,
             valid_operand_counts,
-            line_num,
-            register_args: default_register,
+            register_args: Vec::with_capacity(0),
             imm_arg: default_imm,
         })
     }
 
-    fn get_arg_count(self) -> usize
+    pub fn get_arg_count(&self) -> usize
     {
-        let mut regiser_args: usize = self.register_args.clone().iter().filter(|s| s.is_valid).count();
-        if self.imm_arg.valid
-        {
-            regiser_args += 1;
-        }
-        regiser_args
+        self.register_args.len() + ({ if self.imm_arg.valid { 1u64 } else { 0u64 } }) as usize
     }
+
+    pub fn get_rd(&self) -> Result<RegisterIndexArg, String>
+    {
+        let ret = self
+            .register_args
+            .get(0)
+            .ok_or("Could not access RD")
+            .map_err(|_e| format!("Could not access RD!"))?
+            .clone();
+        Ok(ret)
+    }
+
+    pub fn get_rd_index(&self) -> Result<u64, String>
+    {
+        let ret = self
+            .register_args
+            .get(0)
+            .ok_or("Could not access RD")
+            .map_err(|_e| format!("Could not access RD!"))?
+            .clone();
+        Ok(ret.index as u64)
+    }
+
+    pub fn get_rs1(&self) -> Result<RegisterIndexArg, String>
+    {
+        let ret = self
+            .register_args
+            .get(1)
+            .ok_or("Could not access RS1")
+            .map_err(|_e| format!("Could not access RS1!"))?
+            .clone();
+        Ok(ret)
+    }
+
+    pub fn get_rs1_index(&self) -> Result<u64, String>
+    {
+        let ret = self
+            .register_args
+            .get(1)
+            .ok_or("Could not access RS1")
+            .map_err(|_e| format!("Could not access RS1!"))?
+            .clone();
+        Ok(ret.index as u64)
+    }
+
+    pub fn get_rs2(&self) -> Result<RegisterIndexArg, String>
+    {
+        let ret = self
+            .register_args
+            .get(2)
+            .ok_or("Could not access RS2")
+            .map_err(|_e| format!("Could not access RS2!"))?
+            .clone();
+        Ok(ret)
+    }
+
+    pub fn get_rs2_index(&self) -> Result<u64, String>
+    {
+        let ret = self
+            .register_args
+            .get(2)
+            .ok_or("Could not access RS2")
+            .map_err(|_e| format!("Could not access RS2!"))?
+            .clone();
+        Ok(ret.index as u64)
+    }
+    
 }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Default)]
@@ -459,6 +515,18 @@ pub fn sign_extend_40(raw: u64) -> i64
     (raw << 24).cast_signed() >> 24
 }
 
+pub fn sign_extend_short(raw: u64) -> i64
+{
+    ((raw << 46) as i64) >> 46
+}
+
+pub fn sign_extend_long(raw: u64) -> i64
+{
+    ((raw << 41) as i64) >> 41
+}
+
+
+
 pub fn hex_to_word(hex: &str) -> Result<Word, String>
 {
     const RADIX: u32 = 16;
@@ -475,4 +543,22 @@ pub fn hex_to_word(hex: &str) -> Result<Word, String>
 pub fn to_i40(x: u40) -> i40
 {
     i40::new(x.value() as i64)
+}
+
+pub fn itype_to_rtype_equivalent(label: InstructionLabel) -> Result<InstructionLabel, String>
+{
+    match label
+    {
+        InstructionLabel::ADDI => Ok(InstructionLabel::ADD),
+        InstructionLabel::XORI => Ok(InstructionLabel::XOR),
+        InstructionLabel::ORI => Ok(InstructionLabel::OR),
+        InstructionLabel::ANDI => Ok(InstructionLabel::AND),
+        InstructionLabel::SHRI => Ok(InstructionLabel::SHR),
+        InstructionLabel::SHLI => Ok(InstructionLabel::SHL),
+        InstructionLabel::SLTI => Ok(InstructionLabel::SLT),
+        _others =>
+        {
+            return Err("No R-type Equivalent to break into or its LUI/LI. Value must be too large to fit.".to_string());
+        }
+    }
 }
