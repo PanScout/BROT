@@ -1,6 +1,7 @@
 # Build output
 build/
 bin/
+target/
 *.o
 *.a
 *.so
